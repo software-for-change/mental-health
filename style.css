@@ -10,7 +10,7 @@ body {
 
 .index-top {
     background-color: #94618E;
-    height: 50vh;
+    height: 70vh;
 }
 
 
@@ -98,7 +98,22 @@ body {
 }
 
 
-/* column cards */
+/* links contatiner  */
+
+.links-container {
+    background-color: #f8eee7;
+}
+
+
+/* content cards */
+
+.content-cards {
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.6)), url(flowers.jpg);
+    /* background-image: url(flowers.jpg); */
+    /* background-position: center; */
+    background-size: cover;
+}
 
 
 /* Float four columns side by side */
@@ -132,10 +147,8 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
-}
-
-.main-card {
-    width: 50%;
+    color: white;
+    height: 50vh;
 }
 
 
@@ -147,7 +160,7 @@ html {
 }
 
 .bgimg {
-    background-image: url('7716.jpg');
+    background-image: url('fire.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
@@ -160,6 +173,7 @@ html {
     width: 400px;
     height: 400px;
     background-color: #454547;
+    margin-right: 700px;
 }
 
 .welcome-text {
@@ -170,6 +184,18 @@ html {
     padding-top: 60px;
     letter-spacing: 2px;
     line-height: 40px;
+}
+
+
+/* logo image */
+
+.logo-img {
+    height: 50px;
+    width: 50px;
+}
+
+.logo-circle {
+    border: 1px solid black;
 }
 
 
