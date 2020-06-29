@@ -2,6 +2,7 @@
     /* --shadeofwhite: #f8f8f7; */
     --shadeofwhite: #ececec;
     --grape: #94618E;
+    --lightgray: #d3d3d3;
 }
 
 
@@ -119,7 +120,6 @@ ul.topnav li.right {
 .top-word {
     color: var(--grape);
     font-size: 44px;
-    font-family: Roboto;
 }
 
 .bottom-word {
@@ -378,25 +378,121 @@ html {
     max-width: 1600px;
 }
 
+.category-header-sec {
+    height: 60vh;
+}
+
 .category-fly {
     margin-left: 100px;
     margin-top: 100px;
 }
 
 .wilderness-fly img {
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     float: right;
 }
 
-.second-category-fly {
+.second-category-fly img {
     float: right;
     position: relative;
-    left: 22%;
-    top: 9%;
+    right: 24%;
 }
 
 .category-heading {
     width: 400px;
-    margin: auto;
+    margin-top: 100px;
+}
+
+.category-heading h1 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -3px;
+}
+
+.category-links {
+    height: 100vh;
+}
+
+
+/* Style tab links */
+
+.tablink {
+    float: left;
+    border: none;
+    border-bottom: 1px solid var(--lightgray);
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: var(--lightgray);
+}
+
+
+/* Style the tab content (and add height:100% for full page content) */
+
+.tabcontent {
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+.rectangle {
+    display: block;
+    height: 80px;
+    width: 250px;
+    position: relative;
+    margin-top: 100px;
+    border-radius: 5px;
+    /* border: 2px solid var(--grape); */
+    background: white;
+}
+
+
+/* .circle {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    border: 3px solid var(--grape);
+    left: 50%;
+    margin-left: -25px;
+    top: -20px;
+    background: white;
+} */
+
+.article-container {
+    display: inline-block;
+}
+
+
+/* positioning the vertical line */
+
+.vl {
+    border-left: 2px solid var(--lightgray);
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    margin-top: 800px;
+    margin-left: -3px;
+    top: 0;
+}
+
+
+/* styling for show iframe on hover */
+
+.tiptext {
+    color: #069;
+    cursor: pointer;
+}
+
+.description {
+    display: none;
+    position: absolute;
+    border: 1px solid #000;
+    width: 400px;
+    height: 400px;
 }
