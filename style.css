@@ -1,22 +1,22 @@
-/* Style the body */
-
-body {
-    font-family: Arial;
-    margin: 0;
+:root {
+    /* --shadeofwhite: #f8f8f7; */
+    --shadeofwhite: #ececec;
+    --grape: #94618E;
 }
 
 
-/* image header */
+/* Style the body */
 
-.index-top {
-    background-color: #94618E;
-    height: 70vh;
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: var(--shadeofwhite);
 }
 
 
 /* header image */
 
-.index-top img {
+.header-img img {
     height: 300px;
     width: 300px;
     display: block;
@@ -37,91 +37,194 @@ body {
 }
 
 
-/* overlay nav bar  */
+/******************* index page - welcome page ******************* */
 
-.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-    float: right;
+
+/* content */
+
+.content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    padding-top: 30px;
 }
 
-.overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
+
+/* nav bar */
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
     display: block;
-    transition: 0.3s;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-.overlay a:hover,
-.overlay a:focus {
-    color: #f1f1f1;
+ul.topnav li a:hover:not(.active) {
+    /* background-color: #111; */
 }
 
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+ul.topnav li a.active {
+    background-color: #4CAF50;
 }
 
-.menu {
+ul.topnav li.right {
     float: right;
 }
 
-@media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
+.logo {
+    color: green;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
     }
 }
 
 
-/* links contatiner  */
+/* header section */
 
-.links-container {
-    background-color: #f8eee7;
+.header-sec {
+    height: 100vh;
 }
 
 
-/* content cards */
+/* heading, page title */
 
-.content-cards {
+.heading {
+    margin-top: 10%;
+}
+
+.heading h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: -3px;
+    line-height: 90px;
+}
+
+.top-word {
+    color: var(--grape);
+    font-size: 44px;
+    font-family: Roboto;
+}
+
+.bottom-word {
+    font-size: 88px;
+}
+
+@media screen and (max-width: 600px) {
+    .bottom-word {
+        font-size: 18px;
+    }
+}
+
+
+/* bouncing arrow */
+
+a {
+    text-decoration: none;
+}
+
+.arrow {
+    text-align: center;
+    margin: 8% 0;
+}
+
+.bounce {
+    -webkit-animation: bounce 4s infinite;
+    animation: bounce 4s infinite;
+}
+
+@-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+
+/* cicrcle nav section */
+
+.circle-nav {
+    background: linear-gradient(to right, black 2px, transparent 2px) 0 0, linear-gradient(to right, black 2px, transparent 2px) 0 100%, linear-gradient(to left, black 2px, transparent 2px) 100% 0, linear-gradient(to left, black 2px, transparent 2px) 100% 100%, linear-gradient(to bottom, black 2px, transparent 2px) 0 0, linear-gradient(to bottom, black 2px, transparent 2px) 100% 0, linear-gradient(to top, black 2px, transparent 2px) 0 100%, linear-gradient(to top, black 2px, transparent 2px) 100% 100%;
     background-repeat: no-repeat;
-    background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.6)), url(flowers.jpg);
-    /* background-image: url(flowers.jpg); */
-    /* background-position: center; */
-    background-size: cover;
+    background-size: 20px 20px;
+    height: 40vh;
 }
 
 
-/* Float four columns side by side */
+/* page nav title */
+
+.circle-nav h3,
+.categories h3 {
+    text-align: center;
+}
+
+.nav-description {
+    text-align: center;
+}
+
+
+/* hr for category  */
+
+.cat-divider {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-color: #d3d3d3;
+}
+
+
+/* Category cards, Float four columns side by side */
 
 .column {
     float: left;
     width: 25%;
-    padding: 0 10px;
+    padding: 0 20px 30px;
 }
 
 
@@ -141,14 +244,58 @@ body {
 }
 
 
-/* Style the counter cards */
+/* Responsive columns */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Style the category cards */
+
+
+/* create space between the title and the hr line */
+
+.category-cards {
+    margin-top: 50px;
+}
+
+.card h3 {
+    color: var(--grape);
+}
+
+.recommend-link {
+    font-size: 12px;
+    color: gray;
+}
+
+.recommend-link :hover {
+    text-decoration: underline;
+}
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
-    color: white;
-    height: 50vh;
+    background-color: #f1f1f1;
+}
+
+.categories {
+    height: 60vh;
+}
+
+
+/* footer design */
+
+footer {
+    padding: 10px;
+    height: 10vh;
+    color: gray;
+    font-size: 12px;
 }
 
 
@@ -160,7 +307,7 @@ html {
 }
 
 .bgimg {
-    background-image: url('fire.jpg');
+    background-image: url('circles.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
@@ -216,4 +363,40 @@ html {
         letter-spacing: 0px;
         line-height: 20px;
     }
+    .bgimg {
+        background-image: url('circles.jpg');
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+
+/* ***************************CATEGORY PAGE *************************** */
+
+.category-content {
+    max-width: 1600px;
+}
+
+.category-fly {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.wilderness-fly img {
+    height: 500px;
+    width: 500px;
+    float: right;
+}
+
+.second-category-fly {
+    float: right;
+    position: relative;
+    left: 22%;
+    top: 9%;
+}
+
+.category-heading {
+    width: 400px;
+    margin: auto;
 }

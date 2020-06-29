@@ -1,167 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Mental Health</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-<body id="myPage">
 
-<!-- Navbar -->
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="#">About</a>
-    <a href="#work">Work</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
-</div>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Mental Health</title>
 
 
 
-<div class="w3-top">
- <div class="w3-bar w3-padding w3-left-align">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
-  <span class="w3-right" style="font-size:30px;cursor:pointer" onclick="openoverlayNav()">&#9776;</span>
- </div>
-</div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+</head>
 
-<!-- Image Header -->
-<div class="w3-display-container w3-animate-opacity index-top">
-  <img src="head.png">
-</div>
+<body>
 
-<!-- Links Container -->
-<div class="w3-container w3-padding-64 w3-center w3-theme-l5 links-container" id="team">
-<div class="w3-row"><br>
+    <div class="content">
 
-<div class="w3-quarter">
-  <img src="avator-1.jpg" alt="Boss" style="width:100px; height:100px" class="w3-circle w3-hover-opacity">
-  <p>News Feed</p>
-</div>
+        <!-- top header section -->
+        <div class="header-sec">
+            <!-- nav bar -->
+            <ul class="topnav">
+                <li><a class="logo" href="#home">Mental Wealth</a></li>
 
-<div class="w3-quarter">
-  <img src="avator-1.jpg" alt="Boss" style="width:100px; height:100px" class="w3-circle w3-hover-opacity">
-  <p>Is This Normal?</p>
-</div>
+                <li class="right"><a href="#feature-icons">Recommend a Resource</a></li>
+                <li class="right"><a href="#about">About</a></li>
+            </ul>
 
-<div class="w3-quarter">
-  <img src="avator-1.jpg" alt="Boss" style="width:100px; height:100px" class="w3-circle w3-hover-opacity">
-  
-  <p>Help</p>
-</div>
-
-<div class="w3-quarter">
-  <img src="avator-1.jpg" alt="Boss" style="width:100px; height:100px" class="w3-circle w3-hover-opacity">
-  <p>Counsellors</p>
-</div>
-
-</div>
-</div>
-
-<!-- more info Row -->
-<div class="w3-row-padding w3-padding-64" id="work">
-
-<div class="w3-quarter">
-<div class="w3-card w3-white content-cards">
-  <div class="w3-container card">
-  <h3>Customer 1</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white content-cards">
-  <div class="w3-container card">
-  <h3>Customer 2</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white content-cards">
-  <div class="w3-container card">
-  <h3>Customer 3</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
-
-</div>
+            <div class="header-img">
+                <img src="head.png" alt="">
+            </div>
 
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-  <h4>Follow Us</h4>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
-  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-  Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-  Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-  Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-  Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
-    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
-</footer>
 
-<script>
-// Script for side navigation
-function openoverlayNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
+            <!-- heading -->
+            <div class="heading">
+                <h1 class="top-word">.Live With Care.</h1>
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
+                <h1 class="bottom-word">a collection of resources to help you navigate life</h1>
+            </div>
 
-function w3_open() {
-  var x = document.getElementById("mySidebar");
-  x.style.width = "300px";
-  x.style.paddingTop = "10%";
-  x.style.display = "block";
-}
 
-// Close side navigation
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
+            <div class="arrow bounce">
+                <a class="fa fa-arrow-down fa-1x" href="#feature-icons"></a>
+            </div>
 
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+        </div>
+        <!-- end of th header section -->
+
+
+        <!-- circle nav icons -->
+        <div id="feature-icons" class="circle-nav">
+            <h3>Browse Options</h3>
+            <p class="nav-description">Choose one of the features to navigate to their respective pages. The 2 center buttons will change the content for the categories displayed.</p>
+
+            <div class="w3-container w3-padding-64 w3-center w3-theme-l5" id="team">
+                <div class="w3-row"><br>
+
+                    <div class="w3-quarter">
+                        <img src="avator-1.jpg" alt="Boss" style="width:100px; height:100px" class="w3-circle w3-hover-opacity">
+                        <p>News Feed</p>
+                    </div>
+
+                    <div class="w3-quarter">
+                        <img src="avator-1.jpg" alt="Boss" style="width:100px; height:100px" class="w3-circle w3-hover-opacity">
+                        <p>Is This Normal?</p>
+                    </div>
+
+                    <div class="w3-quarter">
+                        <img src="avator-1.jpg" alt="Boss" style="width:100px; height:100px" class="w3-circle w3-hover-opacity">
+
+                        <p>Help</p>
+                    </div>
+
+                    <div class="w3-quarter">
+                        <img src="avator-1.jpg" alt="Boss" style="width:100px; height:100px" class="w3-circle w3-hover-opacity">
+                        <p>Counsellors</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="cat-divider">
+
+        <div class="categories">
+            <h3>Current Category: </h3>
+
+            <!-- first row of cards for the categories -->
+            <div class="category-cards">
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <h3>Family</h3>
+                            <p>10 resources</p>
+                            <a class="recommend-link" href="">
+                                <p>Recommend a resource</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card">
+                            <h3>Religious</h3>
+                            <p>10 resources</p>
+                            <a class="recommend-link" href="">
+                                <p>Recommend a resource</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card">
+                            <h3>Relationships</h3>
+                            <p>10 resources</p>
+                            <a class="recommend-link" href="">
+                                <p>Recommend a resource</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card">
+                            <h3>Parent/Child</h3>
+                            <p>10 resources</p>
+                            <a class="recommend-link" href="">
+                                <p>Recommend a resource</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card">
+                            <h3>Work</h3>
+                            <p>10 resources</p>
+                            <a class="recommend-link" href="">
+                                <p>Recommend a resource</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card">
+                            <h3>Sexual</h3>
+                            <p>10 resources</p>
+                            <a class="recommend-link" href="">
+                                <p>Recommend a resource</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card">
+                            <h3>Personal</h3>
+                            <p>10 resources</p>
+                            <a class="recommend-link" href="">
+                                <p>Recommend a resource</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card">
+                            <h3>Friends</h3>
+                            <p>10 resources</p>
+                            <a class="recommend-link" href="">
+                                <p>Recommend a resource</p>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <hr class="cat-divider">
+        <!-- footer design -->
+        <footer>
+            <div class="w3-row">
+
+                <div class="w3-third w3-center">
+                    <p>
+                        Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">wandika</a>
+                    </p>
+                </div>
+
+                <div class="w3-third w3-center">
+                    <p class="w3-center"> Copy right 2020</p>
+                </div>
+
+                <div class="w3-third w3-center">
+                    <p>Contact Us</p>
+                </div>
+
+            </div>
+
+
+        </footer>
+
+
+    </div>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script>
+        $(document).ready(function() {
+
+
+        });
+    </script>
 
 </body>
+
 </html>
