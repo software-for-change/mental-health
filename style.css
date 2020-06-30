@@ -3,6 +3,7 @@
     --shadeofwhite: #ececec;
     --grape: #94618E;
     --lightgray: #d3d3d3;
+    --lightpurple: #D8BFD8;
 }
 
 
@@ -452,30 +453,13 @@ html {
 }
 
 
-/* .circle {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    border-radius: 40px;
-    border: 3px solid var(--grape);
-    left: 50%;
-    margin-left: -25px;
-    top: -20px;
-    background: white;
-} */
-
-.article-container {
-    display: inline-block;
-}
-
-
 /* positioning the vertical line */
 
 .vl {
     border-left: 2px solid var(--lightgray);
     height: 600px;
     position: absolute;
-    left: 50%;
+    left: 46%;
     margin-top: 800px;
     margin-left: -3px;
     top: 0;
@@ -495,4 +479,84 @@ html {
     border: 1px solid #000;
     width: 400px;
     height: 400px;
+}
+
+
+/* hr for the links */
+
+.article-container hr {
+    border-color: var(--lightgray);
+    width: 80%;
+}
+
+
+/* make the div for the links scrollable */
+
+.scrollable {
+    height: 600px;
+    margin-top: 70px;
+    overflow-y: auto;
+}
+
+
+/* incrasse padding for the ul list */
+
+.article-container ul {
+    padding-left: 50px;
+}
+
+
+/* change the color for the bullet */
+
+.article-container ul li {
+    color: var(--grape);
+}
+
+
+/* change the color for the text */
+
+.article-container ul li a {
+    color: black;
+    font-weight: 300;
+}
+
+
+/* change the links on hover */
+
+.article-container ul li a:hover {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* modfiying the scrollbar - note: it doesn't work in firefox, Edge and IE */
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: var(--grape);
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
 }
