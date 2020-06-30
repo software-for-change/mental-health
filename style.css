@@ -560,3 +560,10 @@ html {
  ::-webkit-scrollbar-thumb:hover {
     background: #b30000;
 }
+
+
+/* *************************NESWFEED PAGE********************* */
+
+.newsfeed-content {
+    width: 1600px;
+}
