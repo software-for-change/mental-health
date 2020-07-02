@@ -7,16 +7,15 @@ if (count($_POST) > 0) {
     $content_request = $_POST['request'];
 
     if ($content_request = 'help') {
-        $sql = "SELECT category_id, article_title, article_url FROM mental_help";
+        $sql = "SELECT category_name, help_count FROM mental_categories";
         $result = $conn->query($sql);
        
 
     } elseif ($content_request = 'validate') {
 
-        $sql = "SELECT category_id, article_title, article_url FROM mental_validate";
+        $sql = "SELECT category_name, valid_count FROM mental_categories";
         $result = $conn->query($sql);
-        $num_results = mysqli_num_rows($result);
-
+        
     } else {
         $_SESSION['message '] = "Error, invalid request - This is likely a system error and not your fault";
     }
@@ -125,115 +124,36 @@ if (count($_POST) > 0) {
             <!-- first row of cards for the categories -->
             <div class="category-cards">
                 <div class="row">
-                    <div class="column">
-                        <div class="card">
 
                         <?php
                         // access the resources in each category 
                             if ($result->num_rows > 0) {
 
                                 while ($row = mysqli_fetch_array($result)) {
+                                   echo " <div class='column'> ";
+                                    echo "<div class='card'>";
 
-                                    $category = $row["category_id"];
 
-                                    $new_sql = "SELECT category_name FROM mental_categories WHERE id='$category'";
-                                    $new_result = $conn->query($new_sql);
-
-                                    if ($new_row = mysqli_fetch_array($new_result)) {
-
-                                        $cat_name = $new_row["category_name"];
-
+                                    $category = $row["category_name"];
+                                    if ($content_request = 'help') {
+                                        $resources = $row["help_count"];
+                                    } else {
+                                        $resources = $row["valid_count"];
                                     }
-
-                                    echo "<h3>".$cat_name."</h3>";
-                                    echo "<p>".$num_results. " resources </p>";
+                                    
+                                    echo "<h3>".$category."</h3>";
+                                    echo "<p>".$resources. " resources </p>";
                                     echo "<p> <a class='recommend-link' href=''> Recommend a resource </a> </p>";
+
+
+                                    echo "
+                                    </div>
+                                    </div>
+                                    ";
                                 }
                             }
 
-                            ?>
-
-
-
-
-                            <p>10 resources</p>
-                            <a class="recommend-link" href="">
-                                <p>Recommend a resource</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <h3>Religious</h3>
-                            <p>10 resources</p>
-                            <a class="recommend-link" href="">
-                                <p>Recommend a resource</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <h3>Relationships</h3>
-                            <p>10 resources</p>
-                            <a class="recommend-link" href="">
-                                <p>Recommend a resource</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <h3>Parent/Child</h3>
-                            <p>10 resources</p>
-                            <a class="recommend-link" href="">
-                                <p>Recommend a resource</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <h3>Work</h3>
-                            <p>10 resources</p>
-                            <a class="recommend-link" href="">
-                                <p>Recommend a resource</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <h3>Sexual</h3>
-                            <p>10 resources</p>
-                            <a class="recommend-link" href="">
-                                <p>Recommend a resource</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <h3>Personal</h3>
-                            <p>10 resources</p>
-                            <a class="recommend-link" href="">
-                                <p>Recommend a resource</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <h3>Friends</h3>
-                            <p>10 resources</p>
-                            <a class="recommend-link" href="">
-                                <p>Recommend a resource</p>
-                            </a>
-
-                        </div>
-                    </div>
-
+                            ?>                           
 
                 </div>
 
