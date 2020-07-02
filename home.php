@@ -1,3 +1,29 @@
+<?php
+session_start();
+include_once "access-db.php";
+
+if (count($_POST) > 0) {
+    //check which form has been submitted
+    $content_request = $_POST['request'];
+
+    if ($content_request = 'help') {
+        $sql = "SELECT category_id, article_title, article_url FROM mental_help";
+        $result = $conn->query($sql);
+       
+
+    } elseif ($content_request = 'validate') {
+
+        $sql = "SELECT category_id, article_title, article_url FROM mental_validate";
+        $result = $conn->query($sql);
+        $num_results = mysqli_num_rows($result);
+
+    } else {
+        $_SESSION['message '] = "Error, invalid request - This is likely a system error and not your fault";
+    }
+
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -101,7 +127,35 @@
                 <div class="row">
                     <div class="column">
                         <div class="card">
-                            <h3>Family</h3>
+
+                        <?php
+                        // access the resources in each category 
+                            if ($result->num_rows > 0) {
+
+                                while ($row = mysqli_fetch_array($result)) {
+
+                                    $category = $row["category_id"];
+
+                                    $new_sql = "SELECT category_name FROM mental_categories WHERE id='$category'";
+                                    $new_result = $conn->query($new_sql);
+
+                                    if ($new_row = mysqli_fetch_array($new_result)) {
+
+                                        $cat_name = $new_row["category_name"];
+
+                                    }
+
+                                    echo "<h3>".$cat_name."</h3>";
+                                    echo "<p>".$num_results. " resources </p>";
+                                    echo "<p> <a class='recommend-link' href=''> Recommend a resource </a> </p>";
+                                }
+                            }
+
+                            ?>
+
+
+
+
                             <p>10 resources</p>
                             <a class="recommend-link" href="">
                                 <p>Recommend a resource</p>
