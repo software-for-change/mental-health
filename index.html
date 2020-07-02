@@ -1,223 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<title>J2MW</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Mental Health</title>
+<body onload="typeWriter()">
 
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-    <div class="content">
-
-        <!-- top header section -->
-        <div class="header-sec">
-            <!-- nav bar -->
-            <ul class="topnav">
-                <li><a class="logo" href="#home">Mental Wealth</a></li>
-
-                <li class="right"><a href="#feature-icons">Recommend a Resource</a></li>
-                <li class="right"><a href="#about">About</a></li>
-            </ul>
-
-            <div class="header-img">
-                <img src="head.png" alt="">
-            </div>
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
 
 
-
-            <!-- heading -->
-            <div class="heading">
-                <h1 class="top-word">.Live With Care.</h1>
-
-                <h1 class="bottom-word">a collection of resources to help you navigate life</h1>
-            </div>
+        <ul class="topnav">
+            <li><a class="logo" href="index.html">Journey to Mental Wealth</a></li>
+            <li class="right"><a href="about.html">About</a></li>
+        </ul>
 
 
-            <div class="arrow bounce">
-                <a class="fa fa-arrow-down fa-1x" href="#feature-icons"></a>
+        <div class="w3-display-middle">
+            <div class="w3-circle landing-card">
+                <p class="welcome-text" id="welcome"></p>
             </div>
 
         </div>
-        <!-- end of th header section -->
+        <a class="start-text w3-display-bottomright w3-padding-large" href="home.html">
+            <h1>Start Here</h1>
+        </a>
 
-
-        <!-- circle nav icons -->
-        <div id="feature-icons" class="circle-nav">
-            <h3>Browse Options</h3>
-            <p class="nav-description">Choose one of the features to navigate to their respective pages. The 2 center buttons will change the content for the categories displayed.</p>
-
-            <div class="w3-container w3-padding-64 w3-center w3-theme-l5" id="team">
-                <div class="w3-row"><br>
-
-                    <div class="w3-quarter">
-                        <img src="avator-1.jpg" alt="Boss" style="width:100px; height:100px" class="w3-circle w3-hover-opacity">
-                        <p>News Feed</p>
-                    </div>
-
-                    <div class="w3-quarter">
-                        <img src="avator-1.jpg" alt="Boss" style="width:100px; height:100px" class="w3-circle w3-hover-opacity">
-                        <p>Is This Normal?</p>
-                    </div>
-
-                    <div class="w3-quarter">
-                        <img src="avator-1.jpg" alt="Boss" style="width:100px; height:100px" class="w3-circle w3-hover-opacity">
-
-                        <p>Help</p>
-                    </div>
-
-                    <div class="w3-quarter">
-                        <img src="avator-1.jpg" alt="Boss" style="width:100px; height:100px" class="w3-circle w3-hover-opacity">
-                        <p>Counsellors</p>
-                    </div>
-
-                </div>
-            </div>
-
+        <div class="w3-display-bottomleft w3-padding-large">
+            Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">wandika</a>
         </div>
-
-        <hr class="cat-divider">
-
-        <div class="categories">
-            <h3>Current Category: </h3>
-
-            <!-- first row of cards for the categories -->
-            <div class="category-cards">
-                <div class="row">
-                    <div class="column">
-                        <div class="card">
-                            <h3>Family</h3>
-                            <p>10 resources</p>
-                            <a class="recommend-link" href="">
-                                <p>Recommend a resource</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <h3>Religious</h3>
-                            <p>10 resources</p>
-                            <a class="recommend-link" href="">
-                                <p>Recommend a resource</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <h3>Relationships</h3>
-                            <p>10 resources</p>
-                            <a class="recommend-link" href="">
-                                <p>Recommend a resource</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <h3>Parent/Child</h3>
-                            <p>10 resources</p>
-                            <a class="recommend-link" href="">
-                                <p>Recommend a resource</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <h3>Work</h3>
-                            <p>10 resources</p>
-                            <a class="recommend-link" href="">
-                                <p>Recommend a resource</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <h3>Sexual</h3>
-                            <p>10 resources</p>
-                            <a class="recommend-link" href="">
-                                <p>Recommend a resource</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <h3>Personal</h3>
-                            <p>10 resources</p>
-                            <a class="recommend-link" href="">
-                                <p>Recommend a resource</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <h3>Friends</h3>
-                            <p>10 resources</p>
-                            <a class="recommend-link" href="">
-                                <p>Recommend a resource</p>
-                            </a>
-
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-
-
-        <hr class="cat-divider">
-        <!-- footer design -->
-        <footer>
-            <div class="w3-row">
-
-                <div class="w3-third w3-center">
-                    <p>
-                        Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">wandika</a>
-                    </p>
-                </div>
-
-                <div class="w3-third w3-center">
-                    <p class="w3-center"> Copy right 2020</p>
-                </div>
-
-                <div class="w3-third w3-center">
-                    <p>Contact Us</p>
-                </div>
-
-            </div>
-
-
-        </footer>
-
 
     </div>
 
 
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="index.js"></script>
     <script>
-        $(document).ready(function() {
+        var i = 0;
+        var txt = 'The biggest threat to mental health is that people who should be utilizing mental health resources aren\'t doing so because the abuse they experience has been normalized. So we must educate.';
+        var speed = 80;
 
-
-        });
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("welcome").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
     </script>
 
 </body>
