@@ -129,7 +129,7 @@ if (count($_POST) > 0) {
 
         <div class="categories">
             <?php
-            echo "<h3>Current Category:" .$cat_name." </h3>";
+            echo "<h3>Current Category: " .$cat_name." </h3>";
             ?>
             
 
