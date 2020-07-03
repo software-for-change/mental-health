@@ -2,26 +2,6 @@
 session_start();
 include_once "access-db.php";
 
-if (count($_POST) > 0) {
-    //check which form has been submitted
-    $content_request = $_POST['request'];
-
-    if ($content_request = 'help') {
-        $sql = "SELECT category_id, article_title, article_url FROM mental_help";
-        $result = $conn->query($sql);
-
-    } elseif ($content_request = 'validate') {
-
-        $sql = "SELECT category_id, article_title, article_url FROM mental_validate";
-        $result = $conn->query($sql);
-        $num_results = mysqli_num_rows($result);
-
-    } else {
-        $_SESSION['message '] = "Error, invalid request - This is likely a system error and not your fault";
-    }
-
-}
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
