@@ -66,8 +66,8 @@ include_once "access-db.php";
 
         <div class="category-links">
             <button class="tablink" onclick="openPage('Home', this, '#D8BFD8')">Home</button>
-            <button class="tablink" onclick="openPage('News', this, '#D8BFD8')" id="defaultOpen">News</button>
-            <button class="tablink" onclick="openPage('Contact', this, '#D8BFD8')">Contact</button>
+            <button class="tablink" onclick="openPage('Relationships', this, '#D8BFD8')" id="defaultOpen">Relationships</button>
+            <button class="tablink" onclick="openPage('Religious', this, '#D8BFD8')">Religious</button>
             <button class="tablink" onclick="openPage('Family', this, '#D8BFD8')">Family</button>
 
             <div id="Home" class="tabcontent">
@@ -75,17 +75,88 @@ include_once "access-db.php";
                 <p>Home is where the heart is..</p>
             </div>
 
-            <div id="News" class="tabcontent">
-                <h3>News</h3>
-                <p>Some news this fine day!</p>
-                <a target="_blank" href="https://www.virginia.org/getmarried" class="tiptext">A link
-                    <iframe class="description" width="600" height="200" src="https://www.entrepreneur.com/article/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </a>
+            <div id="Relationships" class="tabcontent">
+                <h3>Relationships</h3>
+                <div class="vl"></div>
+
+                <div class="w3-row scrollable ">
+
+                <?php 
+                    $new_sql = "SELECT * FROM mental_help WHERE category_id=3";
+                    $new_result = $conn->query($new_sql);
+
+                    if ($new_result->num_rows > 0) {
+                       
+                        while ($new_row = mysqli_fetch_array($new_result)) {
+                            echo " <div class='w3-half'> ";
+                            echo "<div class='article-container'>";
+        
+                            
+                            $article = $new_row["article_title"];
+                            $url = $new_row["article_url"]; 
+                           
+                            echo "<ul>
+                                    <li><a class='tiptext' href='.$url.'>".$article."
+                                        <iframe class='description' width='560' height='315' src='.$url.' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
+                                    </a></li>
+                                </ul>
+                                <hr>";
+
+                        }
+                    } else {
+                        $_SESSION["message"] =  "No results were found in the family category.";
+                    }
+
+                    echo "
+                                                        </div>
+                                                        </div>
+                                                        ";
+
+                ?>
+
+                </div>
             </div>
 
-            <div id="Contact" class="tabcontent">
-                <h3>Contact</h3>
-                <p>Get in touch, or swing by for a cup of coffee.</p>
+            <div id="Religious" class="tabcontent">
+                <h3>Religious</h3>
+                <div class="vl"></div>
+
+                <div class="w3-row scrollable ">
+
+                <?php 
+                    $new_sql = "SELECT * FROM mental_help WHERE category_id=2";
+                    $new_result = $conn->query($new_sql);
+
+                    if ($new_result->num_rows > 0) {
+                       
+                        while ($new_row = mysqli_fetch_array($new_result)) {
+                            echo " <div class='w3-half'> ";
+                            echo "<div class='article-container'>";
+        
+                            
+                            $article = $new_row["article_title"];
+                            $url = $new_row["article_url"]; 
+                           
+                            echo "<ul>
+                                    <li><a class='tiptext' href='.$url.'>".$article."
+                                        <iframe class='description' width='560' height='315' src='.$url.' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
+                                    </a></li>
+                                </ul>
+                                <hr>";
+
+                        }
+                    } else {
+                        $_SESSION["message"] =  "No results were found in the family category.";
+                    }
+
+                    echo "
+                                                        </div>
+                                                        </div>
+                                                        ";
+
+                ?>
+
+                </div>
             </div>
 
             <div id="Family" class="tabcontent">
