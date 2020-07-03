@@ -2,27 +2,6 @@
 session_start();
 include_once "access-db.php";
 
-if (count($_POST) > 0) {
-    //check which form has been submitted
-    $content_request = $_POST['request'];
-
-    if ($content_request = 'help') {
-        $sql = "SELECT category_name, help_count FROM mental_categories";
-        $result = $conn->query($sql);
-        $cat_name = 'Help';
-
-    } elseif ($content_request = 'validate') {
-
-        $sql = "SELECT category_name, valid_count FROM mental_categories";
-        $result = $conn->query($sql);
-        $cat_name = 'Is this Normal?';
-
-    } else {
-        $_SESSION['message '] = "Error, invalid request - This is likely a system error and not your fault";
-    }
-
-}
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -137,7 +116,7 @@ if (count($_POST) > 0) {
                 <button class="tablink" onclick="openPage('Help', this, '#D8BFD8')">Help</button>
 
                 <div id="Validate" class="tabcontent">
-                    <h3>Validate</h3>
+                    
 
                     <div class="category-cards">
                         <div class="row">
@@ -179,23 +158,23 @@ if (count($_POST) > 0) {
                 </div>
 
                 <div id="Help" class="tabcontent">
-                    <h3>Help</h3>
-
+                   
                     <div class="category-cards">
                         <div class="row">
                             <?php
                         // access the resources in each category
                         $new_sql = "SELECT category_name, help_count FROM mental_categories";
                         $new_result = $conn->query($new_sql);
+
                         if ($new_result->num_rows > 0) {
 
                             while ($new_row = mysqli_fetch_array($new_result)) {
                                 echo " <div class='column'> ";
                                 echo "<div class='card'>";
 
-                                $category = $row["category_name"];
+                                $category = $new_row["category_name"];
                                 
-                                $resources = $row["help_count"];
+                                $resources = $new_row["help_count"];
                                 
 
                                 echo "<h3>" . $category . "</h3>";
