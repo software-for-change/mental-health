@@ -137,7 +137,7 @@ include_once "access-db.php";
                                 $resources = $row["valid_count"];
                                 
 
-                                echo "<h3><a href='category-valid.php'>" . $category . "</a></h3>";
+                                echo "<h3><a href='category-validate.php'>" . $category . "</a></h3>";
                                 echo "<p>" . $resources . " resources </p>";
                                 echo "<p> <a class='recommend-link' href=''> Recommend a resource </a> </p>";
 
