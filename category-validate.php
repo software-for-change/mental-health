@@ -21,6 +21,12 @@ include_once "access-db.php";
 </head>
 
 <body>
+    <div class="w3-center sidebar">
+        <a class="active" href="#home">Home</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="recommend.php">recommend</a>
+        <a href="about.html">About</a>
+    </div>
 
     <div class="content category-content">
 

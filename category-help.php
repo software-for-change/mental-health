@@ -21,6 +21,12 @@ include_once "access-db.php";
 </head>
 
 <body>
+    <div class="w3-center sidebar">
+        <a class="active" href="#home">Home</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="recommend.php">recommend</a>
+        <a href="about.html">About</a>
+    </div>
 
     <div class="content category-content">
 
@@ -38,7 +44,7 @@ include_once "access-db.php";
 
                 <div class="w3-third">
                     <div class="category-fly">
-                        <img src="butterfly.png" alt="">
+                        <img src="images/butterfly.png" alt="">
                     </div>
                 </div>
 
@@ -51,10 +57,10 @@ include_once "access-db.php";
 
                 <div class="w3-third">
                     <div class="second-category-fly">
-                        <img src="butterfly.png" alt="">
+                        <img src="images/butterfly.png" alt="">
                     </div>
                     <div class="wilderness-fly">
-                        <img src="wilderness-butterfly.jpg" alt="">
+                        <img src="images/wilderness-butterfly.jpg" alt="">
                     </div>
                 </div>
 
