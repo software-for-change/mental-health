@@ -93,15 +93,19 @@ if (count($_POST) > 0) {
                     <div class="w3-quarter">
                         <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
                         <form method="post" action="">
-                           <p> <a href=""><input type="submit" value="Is this Normal?" name="request"></a> </p>
+                            <input  name="request"  type='hidden' value='validate' >
+                           <p> <a href=""><input type="submit" value="Is this Normal?"></a> </p>
                         </form>
                         
                     </div>
 
                     <div class="w3-quarter">
                         <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
-
-                        <p>Help</p>
+                        <form method="post" action="">
+                            <input  name="request"  type='hidden' value='help' >
+                           <p> <a href=""><input type="submit" value="Help"></a> </p>
+                        </form>
+                       
                     </div>
 
                     <div class="w3-quarter">
