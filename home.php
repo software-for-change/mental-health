@@ -9,12 +9,14 @@ if (count($_POST) > 0) {
     if ($content_request = 'help') {
         $sql = "SELECT category_name, help_count FROM mental_categories";
         $result = $conn->query($sql);
+        $cat_name = 'Help';
        
 
     } elseif ($content_request = 'validate') {
 
         $sql = "SELECT category_name, valid_count FROM mental_categories";
         $result = $conn->query($sql);
+        $cat_name = 'Is this Normal?';
         
     } else {
         $_SESSION['message '] = "Error, invalid request - This is likely a system error and not your fault";
@@ -126,7 +128,10 @@ if (count($_POST) > 0) {
         <hr class="cat-divider">
 
         <div class="categories">
-            <h3>Current Category: </h3>
+            <?php
+            echo "<h3>Current Category:" .$cat_name." </h3>";
+            ?>
+            
 
             <!-- first row of cards for the categories -->
             <div class="category-cards">
