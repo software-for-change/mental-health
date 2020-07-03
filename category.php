@@ -96,7 +96,7 @@ include_once "access-db.php";
                 <div class="w3-row scrollable ">
 
                 <?php 
-                    $new_sql = "SELECT * FROM mental_categories WHERE id=1";
+                    $new_sql = "SELECT * FROM mental_help WHERE id=1";
                     $new_result = $conn->query($new_sql);
 
                     if ($new_result->num_rows > 0) {
