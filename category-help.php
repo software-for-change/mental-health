@@ -62,7 +62,7 @@ include_once "access-db.php";
 
         <!-- end of header -->
 
-        <h2>cateogry: is this normal / help</h2>
+        <h2>cateogry: Help</h2>
 
         <div class="category-links">
             <button class="tablink" onclick="openPage('Home', this, '#D8BFD8')">Home</button>
