@@ -10,14 +10,13 @@ if (count($_POST) > 0) {
         $sql = "SELECT category_name, help_count FROM mental_categories";
         $result = $conn->query($sql);
         $cat_name = 'Help';
-       
 
     } elseif ($content_request = 'validate') {
 
         $sql = "SELECT category_name, valid_count FROM mental_categories";
         $result = $conn->query($sql);
         $cat_name = 'Is this Normal?';
-        
+
     } else {
         $_SESSION['message '] = "Error, invalid request - This is likely a system error and not your fault";
     }
@@ -38,7 +37,8 @@ if (count($_POST) > 0) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -86,7 +86,8 @@ if (count($_POST) > 0) {
         <!-- circle nav icons -->
         <div id="feature-icons" class="browse-icons">
             <h3>Browse Options</h3>
-            <p class="nav-description">Choose one of the features to navigate to their respective pages. The 2 center buttons will change the content for the categories displayed.</p>
+            <p class="nav-description">Choose one of the features to navigate to their respective pages. The 2 center
+                buttons will change the content for the categories displayed.</p>
 
             <div class="w3-container w3-padding-64 w3-center w3-theme-l5" id="team">
                 <div class="w3-row"><br>
@@ -94,20 +95,17 @@ if (count($_POST) > 0) {
 
                     <div class="w3-quarter">
                         <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
-                        <form method="post" action="">
-                            <input  name="request"  type='hidden' value='validate' >
-                           <p> <a href=""><input type="submit" value="Is this Normal?"></a> </p>
-                        </form>
                         
+                            <p> <a href="category-validate.php">Is this Normal?</a> </p>
+                       
+
                     </div>
 
                     <div class="w3-quarter">
                         <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
-                        <form method="post" action="">
-                            <input  name="request"  type='hidden' value='help' >
-                           <p> <a href=""><input type="submit" value="Help"></a> </p>
-                        </form>
-                       
+                        
+                            <p> <a href="category-help.php"> Help</a> </p>
+                
                     </div>
 
                     <div class="w3-quarter">
@@ -129,47 +127,101 @@ if (count($_POST) > 0) {
 
         <div class="categories">
             <?php
-            echo "<h3>Current Category: " .$cat_name." </h3>";
+            echo "<h3>Current Category: " . $cat_name . " </h3>";
             ?>
-            
-
-            <!-- first row of cards for the categories -->
-            <div class="category-cards">
-                <div class="row">
-
-                        <?php
-                        // access the resources in each category 
-                            if ($result->num_rows > 0) {
-
-                                while ($row = mysqli_fetch_array($result)) {
-                                   echo " <div class='column'> ";
-                                    echo "<div class='card'>";
 
 
-                                    $category = $row["category_name"];
-                                    if ($content_request = 'help') {
-                                        $resources = $row["help_count"];
-                                    } else {
-                                        $resources = $row["valid_count"];
-                                    }
-                                    
-                                    echo "<h3>".$category."</h3>";
-                                    echo "<p>".$resources. " resources </p>";
-                                    echo "<p> <a class='recommend-link' href=''> Recommend a resource </a> </p>";
+            <div class="category-links">
+                <button class="tablink" onclick="openPage('Validate', this, '#D8BFD8')" id="defaultOpen">Is this
+                    Normal</button>
+                <button class="tablink" onclick="openPage('Help', this, '#D8BFD8')">Help</button>
 
+                <div id="Validate" class="tabcontent">
+                    <h3>Validate</h3>
 
-                                    echo "
-                                    </div>
-                                    </div>
-                                    ";
-                                }
+                    <div class="category-cards">
+                        <div class="row">
+
+                            <?php
+                            $sql = "SELECT category_name, valid_count FROM mental_categories";
+                            $result = $conn->query($sql);
+                        // access the resources in each category
+
+                        if ($result->num_rows > 0) {
+
+                            while ($row = mysqli_fetch_array($result)) {
+                                echo " <div class='column'> ";
+                                echo "<div class='card'>";
+
+                                $category = $row["category_name"];
+                                
+                                $resources = $row["valid_count"];
+                                
+
+                                echo "<h3>" . $category . "</h3>";
+                                echo "<p>" . $resources . " resources </p>";
+                                echo "<p> <a class='recommend-link' href=''> Recommend a resource </a> </p>";
+
+                                echo "
+                                                            </div>
+                                                            </div>
+                                                            ";
                             }
+                        }
+                    ?>
 
-                            ?>                           
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <div id="Help" class="tabcontent">
+                    <h3>Help</h3>
+
+                    <div class="category-cards">
+                        <div class="row">
+                            <?php
+                        // access the resources in each category
+                        $new_sql = "SELECT category_name, help_count FROM mental_categories";
+                        $new_result = $conn->query($new_sql);
+                        if ($new_result->num_rows > 0) {
+
+                            while ($new_row = mysqli_fetch_array($new_result)) {
+                                echo " <div class='column'> ";
+                                echo "<div class='card'>";
+
+                                $category = $row["category_name"];
+                                
+                                $resources = $row["help_count"];
+                                
+
+                                echo "<h3>" . $category . "</h3>";
+                                echo "<p>" . $resources . " resources </p>";
+                                echo "<p> <a class='recommend-link' href=''> Recommend a resource </a> </p>";
+
+                                echo "
+                                                            </div>
+                                                            </div>
+                                                            ";
+                            }
+                        }
+
+            ?>
+
+                        </div>
+
+                    </div>
+
 
                 </div>
 
             </div>
+
+            <!-- first row of cards for the categories -->
+
         </div>
 
 
@@ -207,10 +259,10 @@ if (count($_POST) > 0) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <script>
-        $(document).ready(function() {
+    $(document).ready(function() {
 
 
-        });
+    });
     </script>
 
 </body>
