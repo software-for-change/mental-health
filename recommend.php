@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -22,9 +23,9 @@
         <div class="header-sec about-header">
             <!-- nav bar -->
             <ul class="topnav">
-                <li><a class="logo" href="#home">Journey to Mental Wealth</a></li>
+                <li><a class="logo" href="home.php">Journey to Mental Wealth</a></li>
 
-                <li class="right"><a href="#feature-icons">Recommend a Resource</a></li>
+                <li class="right"><a href="recommend.php">Recommend a Resource</a></li>
                 <li class="right"><a href="about.html">About</a></li>
             </ul>
 

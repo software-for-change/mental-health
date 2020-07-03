@@ -23,9 +23,9 @@ include_once "access-db.php";
 <body>
     <div class="w3-center sidebar">
         <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="recommend.php">recommend</a>
+        <a href="about.html">About</a>
     </div>
 
     <div class="content">
@@ -41,7 +41,7 @@ include_once "access-db.php";
             </ul>
 
             <div class="header-img">
-                <img src="head.png" alt="">
+                <img src="images/head.png" alt="">
             </div>
 
 
@@ -50,7 +50,7 @@ include_once "access-db.php";
             <div class="heading">
                 <h1 class="top-word">.Live With Care.</h1>
 
-                <h1 class="bottom-word">a collection of resources to help you navigate life</h1>
+                <h1 class="bottom-word">a collection of resources about mental health</h1>
             </div>
 
 
@@ -75,7 +75,7 @@ include_once "access-db.php";
                     <div class="w3-quarter">
                         <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
                         
-                            <p> <a href="category-validate.php">Is this Normal?</a> </p>
+                            <p> <a href="category-validate.php">Signs of mental abuse</a> </p>
                        
 
                     </div>
@@ -83,18 +83,18 @@ include_once "access-db.php";
                     <div class="w3-quarter">
                         <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
                         
-                            <p> <a href="category-help.php"> Help</a> </p>
+                            <p> <a href="category-help.php">How to get Help</a> </p>
                 
                     </div>
 
                     <div class="w3-quarter">
                         <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
-                        <p>Recommend a Resource</p>
+                        <p><a href="recommend.php">Recommend a Resource </a></p>
                     </div>
 
                     <div class="w3-quarter">
                         <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
-                        <p>Volunteer</p>
+                        <p><a href="volunteer.html">Volunteer </a></p>
                     </div>
 
                 </div>
@@ -111,9 +111,8 @@ include_once "access-db.php";
 
 
             <div class="category-links">
-                <button class="tablink" onclick="openPage('Validate', this, '#D8BFD8')" id="defaultOpen">Is this
-                    Normal</button>
-                <button class="tablink" onclick="openPage('Help', this, '#D8BFD8')">Help</button>
+                <button class="tablink" onclick="openPage('Validate', this, '#D8BFD8')" id="defaultOpen">Signs of mental abuse</button>
+                <button class="tablink" onclick="openPage('Help', this, '#D8BFD8')">How to get Help</button>
 
                 <div id="Validate" class="tabcontent">
                     

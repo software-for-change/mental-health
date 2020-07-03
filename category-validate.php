@@ -16,7 +16,8 @@ include_once "access-db.php";
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -27,9 +28,9 @@ include_once "access-db.php";
         <div class="header-sec category-header-sec">
             <!-- nav bar -->
             <ul class="topnav">
-                <li><a class="logo" href="#home">Journey to Mental Wealth</a></li>
+                <li><a class="logo" href="home.php">Journey to Mental Wealth</a></li>
 
-                <li class="right"><a href="#feature-icons">Recommend a Resource</a></li>
+                <li class="right"><a href="recommend.php">Recommend a Resource</a></li>
                 <li class="right"><a href="about.html">About</a></li>
             </ul>
 
@@ -37,22 +38,23 @@ include_once "access-db.php";
 
                 <div class="w3-third">
                     <div class="category-fly">
-                        <img src="butterfly.png" alt="">
+                        <img src="images/butterfly.png" alt="">
                     </div>
                 </div>
 
                 <div class="w3-third">
                     <div class="w3-center category-heading">
-                        <h1>validating our feelings through reading people's expreiences changes the way we see our selves. we become more human.</h1>
+                        <h1>validating our feelings through reading people's expreiences changes the way we see our
+                            selves. we become more human.</h1>
                     </div>
                 </div>
 
                 <div class="w3-third">
                     <div class="second-category-fly">
-                        <img src="butterfly.png" alt="">
+                        <img src="images/butterfly.png" alt="">
                     </div>
                     <div class="wilderness-fly">
-                        <img src="wilderness-butterfly.jpg" alt="">
+                        <img src="images/wilderness-butterfly.jpg" alt="">
                     </div>
                 </div>
 
@@ -66,7 +68,8 @@ include_once "access-db.php";
 
         <div class="category-links">
             <button class="tablink" onclick="openPage('Home', this, '#D8BFD8')">Home</button>
-            <button class="tablink" onclick="openPage('Relationships', this, '#D8BFD8')" id="defaultOpen">Relationships</button>
+            <button class="tablink" onclick="openPage('Relationships', this, '#D8BFD8')"
+                id="defaultOpen">Relationships</button>
             <button class="tablink" onclick="openPage('Religious', this, '#D8BFD8')">Religious</button>
             <button class="tablink" onclick="openPage('Family', this, '#D8BFD8')">Family</button>
 
@@ -81,7 +84,7 @@ include_once "access-db.php";
 
                 <div class="w3-row scrollable ">
 
-                <?php 
+                    <?php 
                     $new_sql = "SELECT * FROM mental_validate WHERE category_id=3";
                     $new_result = $conn->query($new_sql);
 
@@ -123,7 +126,7 @@ include_once "access-db.php";
 
                 <div class="w3-row scrollable ">
 
-                <?php 
+                    <?php 
                     $new_sql = "SELECT * FROM mental_validate WHERE category_id=2";
                     $new_result = $conn->query($new_sql);
 
@@ -166,7 +169,7 @@ include_once "access-db.php";
 
                 <div class="w3-row scrollable ">
 
-                <?php 
+                    <?php 
                     $new_sql = "SELECT * FROM mental_validate WHERE category_id=1";
                     $new_result = $conn->query($new_sql);
 
@@ -243,11 +246,11 @@ include_once "access-db.php";
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <script>
-        $(".tiptext").mouseover(function() {
-            $(this).children(".description").show();
-        }).mouseout(function() {
-            $(this).children(".description").hide();
-        });
+    $(".tiptext").mouseover(function() {
+        $(this).children(".description").show();
+    }).mouseout(function() {
+        $(this).children(".description").hide();
+    });
     </script>
 
 </body>

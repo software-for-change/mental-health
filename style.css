@@ -367,7 +367,7 @@ html {
 }
 
 .bgimg {
-    background-image: url('circles.jpg');
+    background-image: url('images/circles.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
@@ -416,7 +416,7 @@ html {
         line-height: 20px;
     }
     .bgimg {
-        background-image: url('circles.jpg');
+        background-image: url('images/circles.jpg');
         min-height: 100%;
         background-position: center;
         background-size: cover;
