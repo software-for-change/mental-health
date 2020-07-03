@@ -105,10 +105,10 @@ include_once "access-db.php";
         <hr class="cat-divider">
 
         <div class="categories">
-            <?php
-            echo "<h3>Current Category: " . $cat_name . " </h3>";
-            ?>
-
+            <h3>Content Category</h3>
+            <p>Each category has articles organised based on different groups. Select a category and click the title of the group to be routed to the respective page</p>
+            
+<br><br><br>
 
             <div class="category-links">
                 <button class="tablink" onclick="openPage('Validate', this, '#D8BFD8')" id="defaultOpen">Signs of mental abuse</button>
