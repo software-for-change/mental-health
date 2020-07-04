@@ -73,10 +73,6 @@ ul.topnav li a {
     text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.active) {
-    /* background-color: #111; */
-}
-
 ul.topnav li a.active {
     background-color: #4CAF50;
 }
@@ -104,6 +100,8 @@ ul.topnav li.right {
     height: 100vh;
 }
 
+@media screen and (max-width: 600px) {}
+
 
 /* heading, page title */
 
@@ -130,6 +128,10 @@ ul.topnav li.right {
 @media screen and (max-width: 600px) {
     .bottom-word {
         font-size: 18px;
+    }
+    /* header section re-sizing */
+    .header-sec {
+        height: 20vh;
     }
 }
 
