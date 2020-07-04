@@ -100,7 +100,12 @@ ul.topnav li.right {
     height: 100vh;
 }
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+    /* header section re-sizing */
+    .header-sec {
+        height: 20vh;
+    }
+}
 
 
 /* heading, page title */
@@ -128,10 +133,6 @@ ul.topnav li.right {
 @media screen and (max-width: 600px) {
     .bottom-word {
         font-size: 18px;
-    }
-    /* header section re-sizing */
-    .header-sec {
-        height: 20vh;
     }
 }
 
