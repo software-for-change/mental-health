@@ -376,19 +376,16 @@ html {
 
 /* landing card */
 
-.landing-card {
-    width: 400px;
-    height: 400px;
-    background-color: #454547;
-    margin-right: 700px;
-}
-
 .welcome-text {
     font-weight: 400;
     padding: 40px;
     padding-top: 80px;
     letter-spacing: 2px;
     line-height: 40px;
+}
+
+.landing-text {
+    font-size: 30px;
 }
 
 .start-text h1 {
@@ -406,11 +403,6 @@ html {
         display: block;
         margin-bottom: 20px;
     }
-    /* resize the landing card */
-    .landing-card {
-        width: 300px;
-        height: 300px;
-    }
     .welcome-text {
         letter-spacing: 0px;
         line-height: 20px;
@@ -420,6 +412,16 @@ html {
         min-height: 100%;
         background-position: center;
         background-size: cover;
+    }
+    /* resizing the start text for mobile versions */
+    .start-text h1 {
+        padding-right: 20px;
+        color: var(--grape);
+        font-size: 30px;
+    }
+    /* resize the center card */
+    .w3-card {
+        width: 300px;
     }
 }
 
