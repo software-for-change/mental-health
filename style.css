@@ -436,7 +436,7 @@ html {
 }
 
 .category-header-sec {
-    height: 60vh;
+    padding-bottom: 100px;
 }
 
 .category-fly {
@@ -629,7 +629,7 @@ html {
     line-height: 4em;
     text-align: center;
     margin: 2em 4em;
-    height: 80vh;
+    padding-bottom: 100px;
     width: 700px;
     background: var(--shadeofwhite);
     -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);

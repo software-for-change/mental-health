@@ -36,7 +36,7 @@ include_once "access-db.php";
             <ul class="topnav">
                 <li><a class="logo" href="#home">Journey to Mental Wealth</a></li>
 
-                <li class="right"><a href="recommend.html">Recommend a Resource</a></li>
+                <li class="right"><a href="recommend.php">Recommend a Resource</a></li>
                 <li class="right"><a href="about.html">About</a></li>
             </ul>
 
