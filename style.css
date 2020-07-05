@@ -96,15 +96,16 @@ ul.topnav li.right {
 
 /* header section */
 
-.header-sec {
+
+/* .header-sec {
     height: 100vh;
-}
+} */
 
 @media screen and (max-width: 600px) {
     /* header section re-sizing */
-    .header-sec {
+    /* .header-sec {
         height: 20vh;
-    }
+    } */
 }
 
 
@@ -198,7 +199,6 @@ a {
     background: linear-gradient(to right, black 2px, transparent 2px) 0 0, linear-gradient(to right, black 2px, transparent 2px) 0 100%, linear-gradient(to left, black 2px, transparent 2px) 100% 0, linear-gradient(to left, black 2px, transparent 2px) 100% 100%, linear-gradient(to bottom, black 2px, transparent 2px) 0 0, linear-gradient(to bottom, black 2px, transparent 2px) 100% 0, linear-gradient(to top, black 2px, transparent 2px) 0 100%, linear-gradient(to top, black 2px, transparent 2px) 100% 100%;
     background-repeat: no-repeat;
     background-size: 20px 20px;
-    height: 60vh;
     padding-top: 100px;
 }
 
@@ -298,7 +298,7 @@ a {
 }
 
 .categories {
-    height: 60vh;
+    /* height: 60vh; */
 }
 
 

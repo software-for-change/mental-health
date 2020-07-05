@@ -106,7 +106,7 @@ include_once "access-db.php";
 
         <div class="categories">
             <h3>Content Category</h3>
-            <p>Each category has articles organised based on different groups. Select a category and click the title of the group to be routed to the respective page</p>
+            <p class="nav-description">Each category has articles organised based on different groups. Select a category and click the title of the group to be routed to the respective page</p>
             
 <br><br><br>
 
