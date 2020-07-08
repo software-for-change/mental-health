@@ -7,73 +7,127 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<link href="stacked-cards-master/dist/stackedCards.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
 
-<body onload="typeWriter()">
+
+<body>
 
     <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
         <ul class="topnav">
             <li><a class="logo" href="index.html">Journey to Mental Wealth</a></li>
-            <li class="right"><a href="about.html">About</a></li>
+
         </ul>
 
+        <h3>You need someone to understand your pain - we are that someone</h3>
+
         <!-- <div class="w3-display-middle w3-card w3-text-black"> -->
-        <div class="stacked-cards example">
-            <ul>
-                <li>
-                    <div class="content" style="height: 500px;">
-                        Card 1
-                    </div>
+        <div class="index-container">
+            <div class="index-card">
+                <h3 class="title">Card 1</h3>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+
+                    mental health is when you need your head to be healthy
 
 
-                </li>
-                <li>
-                    <div class="content" style="height: 500px;">
-                        Card 1
-                    </div>
-                </li>
-                <li>
-                    <div class="content" style="height: 500px;">
-                        Card 1
-                    </div>
-                </li>
+                </div>
 
-                <li>
-                    <div class="content" style="height: 500px;">
-                        Card 1
-                    </div>
-                </li>
-                <li>
-                    <div class="content" style="height: 500px;">
-                        Card 1
-                    </div>
-                </li>
-                <li>
-                    <div class="content" style="height: 500px;">
-                        Card 1
-                    </div>
-                </li>
 
-            </ul>
+            </div>
+            <div class="index-card">
+                <h3 class="title">Card 2</h3>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+
+                    this is where the fun begins
+
+                </div>
+            </div>
+            <div class="index-card">
+                <h3 class="title">Card 3</h3>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    the begining and the end is where it starts
+                </div>
+            </div>
+            <div class="index-card">
+                <h3 class="title">Card 4</h3>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    we wish you a merry christmans
+                </div>
+            </div>
         </div>
+
+
+        <!-- subscribe button -->
+        <div class="parent-wrapper">
+            <span class="close-btn glyphicon glyphicon-remove"></span>
+            <div class="subscribe-wrapper">
+                <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+                <input type="email" name="email" class="subscribe-input" placeholder="Your e-mail">
+                <div class="submit-btn">SUBMIT</div>
+            </div>
+        </div>
+
         <!-- </div> -->
 
-        <a class="start-text w3-display-bottomright w3-padding-large" href="home.php">
-            <h1>Start Here</h1>
-        </a>
+
+
+        <!-- the mobile versions -->
+        <div class="mobile-index-container">
+            <div class="w3-content w3-display-container">
+                <img class="mySlides" src="images/wilderness-butterfly.jpg" style="width:100%">
+                <img class="mySlides" src="images/wilderness-butterfly.jpg" style="width:100%">
+                <img class="mySlides" src="images/wilderness-butterfly.jpg" style="width:100%">
+                <img class="mySlides" src="images/wilderness-butterfly.jpg" style="width:100%">
+
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+
+
+        </div>
+
+
+
     </div>
 
-    <script src="stacked-cards-master/dist/stackedCards.min.js"></script>
+
     <script>
-        var stackedCardSlide = new stackedCards({
-            selector: '.example'
-        });
+        var slideIndex = 1;
+        showDivs(slideIndex);
 
-        stackedCardSlide.init();
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
 
-        var stackedCardSlide = new stackedCards({
-            layout: "fanOut"
-        });
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
     </script>
 
 </body>
