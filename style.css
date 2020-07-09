@@ -528,6 +528,13 @@ input[class=email-field] {
 }
 
 
+/* glow text for mobile version */
+
+.glow {
+    display: none;
+}
+
+
 /* ***************************CATEGORY PAGE *************************** */
 
 .category-content {
@@ -814,6 +821,24 @@ input[class=email-field] {
     .index-heading p {
         text-align: center;
     }
+    .glow {
+        display: inline-block;
+        font-size: medium;
+        color: black;
+        font-weight: 500;
+        padding-top: 10%;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+    @-webkit-keyframes glow {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+        to {
+            text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+    }
 }
 
 
@@ -838,4 +863,21 @@ input[class=email-field] {
 
 /* Large devices (laptops/desktops, 992px and up) */
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    .index-heading p {
+        font-size: x-large;
+    }
+    .info-links {
+        font-size: x-large;
+        font-weight: 500;
+    }
+    .subscribe-form {
+        font-size: large;
+    }
+    .index-heading h3 {
+        font-size: 70px;
+    }
+    .row-content {
+        margin-top: 60px;
+    }
+}
