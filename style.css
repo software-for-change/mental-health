@@ -519,6 +519,7 @@ input[class=email-field] {
     text-decoration: none;
     cursor: pointer;
     font-size: 20px;
+    font-weight: 500;
     letter-spacing: -1px;
     background-color: transparent;
 }
@@ -801,7 +802,7 @@ input[class=email-field] {
 }
 
 
-/* Extra small devices (phones, 600px and down) */
+/* mobile phone (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
     /* the index / landing page styling */
@@ -839,6 +840,9 @@ input[class=email-field] {
             text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
         }
     }
+    .aboutButton {
+        color: white;
+    }
 }
 
 
@@ -855,16 +859,16 @@ input[class=email-field] {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .landing-page {
-        /* padding: 40px; */
-    }
+    /* .row-content {
+        padding: 40px;
+    } */
 }
 
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* tablets) */
 
-@media only screen and (min-width: 992px) {
-    .index-heading p {
+@media only screen and (max-width: 1024px) {
+    /* .index-heading p {
         font-size: x-large;
     }
     .info-links {
@@ -879,5 +883,6 @@ input[class=email-field] {
     }
     .row-content {
         margin-top: 60px;
-    }
+        padding: 40px;
+    } */
 }
