@@ -12,21 +12,14 @@
 <script src="jquery-3.5.1.min.js"></script>
 
 <body>
-    <!-- <div class="w3-center sidebar">
-        <a class="active" href="home.php">48 Resources</a>
-        <a href="volunteer.html">20 Subscribers</a>
-        <a href="recommend.php">100 volunteers</a>
-
-    </div> -->
-
-
-
-
-
     <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-        <div class="content">
+        <div class="content landing-page">
+            <div class="landing-img header-img">
+                <img src="images/head.png" alt="">
+            </div>
 
-            <div class="w3-row">
+
+            <div class="w3-row row-content">
                 <div class="w3-half">
                     <div class="index-heading">
                         <h3 class="w3-padding-16">Journey to Mental Wealth</h3>
@@ -43,7 +36,7 @@
 
                     </div>
 
-                    <a class="w3-center w3-button w3-black" href="home.php">Explore the site</a>
+
 
                 </div>
 
@@ -62,6 +55,7 @@
                     <hr class="about-line">
                     <p class="centerp" id="benefits"></p><br>
 
+                    <a class="w3-center w3-button w3-black" href="home.php">Check out our articles</a>
                 </div>
 
             </div>
@@ -87,7 +81,7 @@
 
         function student() {
             if (document.getElementById("student").innerHTML == "") {
-                document.getElementById("student").innerHTML = "Any current student at UB can sign up to be a student, we just ask that you are currently in the class that you choose to be tutored in to make sure the students that need help with their grades are able to get it. Once you create an account, you can start browsing classes, adding to your profile, and making appointments with tutors. You will have the option to meet in a physical location with your tutor or meet virtually via zoom. Appointments are standard one hour time slots, however at this time, we are allowing students to book as many consecutive time slots with a tutor as they would like. Once a tutoring session is complete, it is your job to \"complete\" the session by clicking complete on your appointment page. After that you will be free to rate your tutor and then clear that appointment from your page or keep it for reference.You will also be able to track your progress in-app via the \"my progress\" tab. This requires you to manually enter grades for your courses you have been tutored in, and we strongly encourage you to track your progress!For any further questions, visit the contact tab at the bottom of the page. Happy learning!";
+                document.getElementById("student").innerHTML = "Any current student at UB can sign up to be a student, we just ask that you are currently in the class that you choose to be tutored in to make sure the students that need help with their grades are able to get it. Once you create an account, you can start browsing classes, adding to your profile, and making appointments with tutors.!";
             } else {
                 document.getElementById("student").innerHTML = "";
             }
@@ -95,7 +89,7 @@
 
         function tutor() {
             if (document.getElementById("tutor").innerHTML == "") {
-                document.getElementById("tutor").innerHTML = "Any student at UB, whether undergraduate, graduate, or post-graduate can sign up to be a tutor with UBtutoring as long as you have a valid UB email address. As of right now, our site only allows tutors to choose one class to teach, in the future we are hoping to expand those options! Once you choose a course an complete sign-up, it encouraged that you complete your profle and add a profile photo so students can identify you when they show up to appointments. After that, navigate to \"set availability\" and simply click on the slots that you want to be availabel for the week. Keep in mind that you can change this schedule at any time. If a student makes an appointment with you, you will receive an email and the appointment will be available on your appointment page. This page will allow you to see the date and time of the appointment as well as contact information for the student and the option to cancel if there is an emergency. If you have any further questions or concerns, navigate to the contact button at the bottom of this page.";
+                document.getElementById("tutor").innerHTML = "Any student at UB, whether undergraduate, graduate, or post-graduate can sign up to be a tutor with UBtutoring as long as you have a valid UB email address. As of right now, our site only allows tutors to choose one class to teach, in the future we are hoping to expand those options! Once you choose a course an complete sign-up, it encouraged that you complete.";
             } else {
                 document.getElementById("tutor").innerHTML = "";
             }

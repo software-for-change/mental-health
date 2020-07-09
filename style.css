@@ -13,6 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color: var(--shadeofwhite);
+    -webkit-text-size-adjust: 100%;
 }
 
 
@@ -349,9 +350,9 @@ footer {
     .sidebar a {
         float: left;
     }
-    div.content {
+    /* div.content {
         margin-left: 0;
-    }
+    } */
 }
 
 @media screen and (max-width: 400px) {
@@ -524,21 +525,6 @@ input[class=email-field] {
 
 .info-links hr {
     border: 0.1px solid var(--lightgray);
-}
-
-
-/* Responsive columns */
-
-@media screen and (max-width: 600px) {
-    .index-container {
-        display: none;
-    }
-    .bgimg {
-        /* background-image: url('images/circles.jpg'); */
-        min-height: 100%;
-        background-position: center;
-        background-size: cover;
-    }
 }
 
 
@@ -757,7 +743,8 @@ input[class=email-field] {
     text-align: center;
 }
 
-.about-img img {
+.about-img img,
+.landing-img img {
     height: 100px;
     width: 100px;
     margin-top: 30px;
@@ -806,4 +793,49 @@ input[class=email-field] {
     font-size: small;
 }
 
-.form {}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    /* the index / landing page styling */
+    .landing-img img {
+        height: 50px;
+        width: 50px;
+    }
+    .index-heading h3 {
+        font-size: xx-large;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .index-heading {
+        margin-top: 0;
+    }
+    .index-heading p {
+        text-align: center;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .landing-img img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .landing-page {
+        /* padding: 40px; */
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {}
