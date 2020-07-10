@@ -68,7 +68,7 @@ include_once "access-db.php";
             <p class="nav-description">Choose one of the features to navigate to their respective pages. The 2 center
                 buttons will change the content for the categories displayed.</p>
 
-            <div class="w3-container w3-padding-64 w3-center w3-theme-l5">
+            <div class="desktop-browse-icons w3-padding-64 w3-center w3-theme-l5">
                 <div class="w3-row"><br>
 
 
