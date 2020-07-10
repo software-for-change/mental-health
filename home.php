@@ -68,23 +68,23 @@ include_once "access-db.php";
             <p class="nav-description">Choose one of the features to navigate to their respective pages. The 2 center
                 buttons will change the content for the categories displayed.</p>
 
-            <div class="w3-container w3-padding-64 w3-center w3-theme-l5" id="team">
+            <div class="w3-container w3-padding-64 w3-center w3-theme-l5">
                 <div class="w3-row"><br>
 
 
                     <div class="w3-quarter">
                         <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
-                        
-                            <p> <a href="category-validate.php">Signs of mental abuse</a> </p>
-                       
+
+                        <p> <a href="category-validate.php">Signs of mental abuse</a> </p>
+
 
                     </div>
 
                     <div class="w3-quarter">
                         <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
-                        
-                            <p> <a href="category-help.php">How to get Help</a> </p>
-                
+
+                        <p> <a href="category-help.php">How to get Help</a> </p>
+
                     </div>
 
                     <div class="w3-quarter">
@@ -102,51 +102,94 @@ include_once "access-db.php";
 
         </div>
 
+
+        <!-- mobile version for the browse nav circle icons  -->
+
+        <div class="mobile-browse-icons w3-padding-64 w3-center w3-theme-l5">
+            <div class="w3-row"><br>
+
+                <div class="w3-half">
+                    <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
+
+                    <p> <a href="category-validate.php">Signs of mental abuse</a> </p>
+
+
+                </div>
+
+                <div class="w3-half">
+                    <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
+
+                    <p> <a href="category-help.php">How to get Help</a> </p>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="w3-row">
+
+                <div class="w3-half">
+                    <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
+                    <p><a href="recommend.php">Recommend a Resource </a></p>
+                </div>
+
+                <div class="w3-half">
+                    <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
+                    <p><a href="volunteer.html">Volunteer </a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+
         <hr class="cat-divider">
 
         <div class="categories">
             <h3>Content Category</h3>
-            <p class="nav-description">Each category has articles organised based on different groups. Select a category and click the title of the group to be routed to the respective page</p>
-            
-<br><br><br>
+            <p class="nav-description">Each category has articles organised based on different groups. Select a category
+                and click the title of the group to be routed to the respective page</p>
+
+            <br><br><br>
 
             <div class="category-links">
-                <button class="tablink" onclick="openPage('Validate', this, '#D8BFD8')" id="defaultOpen">Signs of mental abuse</button>
+                <button class="tablink" onclick="openPage('Validate', this, '#D8BFD8')" id="defaultOpen">Signs of mental
+                    abuse</button>
                 <button class="tablink" onclick="openPage('Help', this, '#D8BFD8')">How to get Help</button>
 
                 <div id="Validate" class="tabcontent">
-                    
+
 
                     <div class="category-cards">
                         <div class="row">
 
                             <?php
-                            $sql = "SELECT category_name, valid_count FROM mental_categories";
-                            $result = $conn->query($sql);
-                        // access the resources in each category
+                                $sql = "SELECT category_name, valid_count FROM mental_categories";
+                                $result = $conn->query($sql);
+                                // access the resources in each category
 
-                        if ($result->num_rows > 0) {
+                                if ($result->num_rows > 0) {
 
-                            while ($row = mysqli_fetch_array($result)) {
-                                echo " <div class='column'> ";
-                                echo "<div class='card'>";
+                                    while ($row = mysqli_fetch_array($result)) {
+                                        echo " <div class='column'> ";
+                                        echo "<div class='paper'>";
 
-                                $category = $row["category_name"];
-                                
-                                $resources = $row["valid_count"];
-                                
+                                        $category = $row["category_name"];
 
-                                echo "<h3><a href='category-validate.php'>" . $category . "</a></h3>";
-                                echo "<p>" . $resources . " resources </p>";
-                                echo "<p> <a class='recommend-link' href=''> Recommend a resource </a> </p>";
+                                        $resources = $row["valid_count"];
 
-                                echo "
-                                                            </div>
-                                                            </div>
-                                                            ";
-                            }
-                        }
-                    ?>
+                                        echo "<h3><a href='category-validate.php'>" . $category . "</a></h3>";
+                                        echo "<p>" . $resources . " resources </p>";
+                                        echo "<p> <a class='recommend-link' href=''> Recommend a resource </a> </p>";
+
+                                        echo "
+                                                                                            </div>
+                                                                                            </div>
+                                                                                            ";
+                                    }
+                                }
+                                ?>
 
                         </div>
 
@@ -157,37 +200,36 @@ include_once "access-db.php";
                 </div>
 
                 <div id="Help" class="tabcontent">
-                   
+
                     <div class="category-cards">
                         <div class="row">
                             <?php
-                        // access the resources in each category
-                        $new_sql = "SELECT category_name, help_count FROM mental_categories";
-                        $new_result = $conn->query($new_sql);
+                                // access the resources in each category
+                                $new_sql = "SELECT category_name, help_count FROM mental_categories";
+                                $new_result = $conn->query($new_sql);
 
-                        if ($new_result->num_rows > 0) {
+                                if ($new_result->num_rows > 0) {
 
-                            while ($new_row = mysqli_fetch_array($new_result)) {
-                                echo " <div class='column'> ";
-                                echo "<div class='card'>";
+                                    while ($new_row = mysqli_fetch_array($new_result)) {
+                                        echo " <div class='column'> ";
+                                        echo "<div class='paper'>";
 
-                                $category = $new_row["category_name"];
-                                
-                                $resources = $new_row["help_count"];
-                                
+                                        $category = $new_row["category_name"];
 
-                                echo "<h3><a href='category-help.php'>" . $category . "</a></h3>";
-                                echo "<p>" . $resources . " resources </p>";
-                                echo "<p> <a class='recommend-link' href=''> Recommend a resource </a> </p>";
+                                        $resources = $new_row["help_count"];
 
-                                echo "
-                                                            </div>
-                                                            </div>
-                                                            ";
-                            }
-                        }
+                                        echo "<h3><a href='category-help.php'>" . $category . "</a></h3>";
+                                        echo "<p>" . $resources . " resources </p>";
+                                        echo "<p> <a class='recommend-link' href=''> Recommend a resource </a> </p>";
 
-            ?>
+                                        echo "
+                                                                                            </div>
+                                                                                            </div>
+                                                                                            ";
+                                    }
+                                }
+
+                                ?>
 
                         </div>
 
@@ -197,9 +239,6 @@ include_once "access-db.php";
                 </div>
 
             </div>
-
-            <!-- first row of cards for the categories -->
-
         </div>
 
 
