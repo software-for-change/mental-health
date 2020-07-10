@@ -45,7 +45,7 @@ include_once "access-db.php";
 
                 <div class="w3-third">
                     <div class="category-fly">
-                        <img style="width: 200; height: 200;" src="images/butterfly.png" alt="">
+                        <img style="width: 200; height: 200;" src="images/nature-leaves.png" alt="">
                     </div>
                 </div>
 
