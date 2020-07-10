@@ -70,7 +70,7 @@ include_once "access-db.php";
         <!-- end of header -->
 
         <h3 class="w3-center">Cateogry: Signs of mental abuse</h3>
-        <p class="w3-center w3-padding-16">These articles describe different ways in which people can cope and are meant to give you ideas on how to deal but don't subsitute therapy.</p>
+        <p class="category-desc w3-center w3-padding-16">These articles describe different ways in which people can cope and are meant to give you ideas on how to deal but don't subsitute therapy.</p>
 
         <div class="category-links">
             <button class="tablink" onclick="openPage('Home', this, '#D8BFD8')">Home</button>
