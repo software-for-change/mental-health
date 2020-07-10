@@ -944,6 +944,9 @@ input[class=email-field] {
     .vl {
         display: none;
     }
+    .category-header-sec {
+        padding-bottom: 50px;
+    }
 }
 
 
