@@ -41,7 +41,7 @@ include_once "access-db.php";
                 <li class="right"><a href="about.html">About</a></li>
             </ul>
 
-            <div class="w3-row">
+            <div class="w3-row w3-padding-64">
 
                 <div class="w3-third">
                     <div class="category-fly">

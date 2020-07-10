@@ -950,4 +950,22 @@ input[class=email-field] {
 }
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* tablets with low resolution - regular tabs */
+
+@media only screen and (max-width: 787px) {
+    /***************category-help page********************  */
+    .category-heading h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: large;
+    }
+    .category-heading {
+        width: 100%;
+    }
+    .category-fly {
+        margin: 0;
+    }
+    .wilderness-fly img {
+        height: 200px;
+        width: 200px;
+    }
+}
