@@ -952,7 +952,7 @@ input[class=email-field] {
 
 /* tablets with low resolution - regular tabs */
 
-@media only screen and (max-width: 787px) and (max-width: 1025px) {
+@media only screen and (max-width: 768px) and (max-width: 1025px) {
     /***************category-help page********************  */
     .category-heading h1 {
         font-family: 'Roboto', sans-serif;
