@@ -901,6 +901,17 @@ input[class=email-field] {
     .aboutButton {
         color: white;
     }
+    /* ********** about page ***************** */
+    .about-card {
+        display: block;
+        line-height: 4em;
+        text-align: center;
+        margin-top: 30%;
+        padding-top: 5%;
+        /* padding-bottom: 100px; */
+        width: 100%;
+    }
+    .about-img img {}
 }
 
 
