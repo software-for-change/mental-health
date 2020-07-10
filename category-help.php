@@ -45,7 +45,7 @@ include_once "access-db.php";
 
                 <div class="w3-third">
                     <div class="category-fly">
-                        <img style="width:200px; height:200px;" src="images/nature-leaves.png" alt="">
+                        <img src="images/nature-leaves.png" alt="">
                     </div>
                 </div>
 
@@ -69,8 +69,9 @@ include_once "access-db.php";
 
         <!-- end of header -->
 
-        <h2>cateogry: Help</h2>
+        <h3 class="w3-center">Cateogry: Help</h3>
 
+        <p>These articles describe different ways in which people can cope and are meant to give you ideas on how to deal but don't subsitute therapy.</p>
         <div class="category-links">
             <button class="tablink" onclick="openPage('Home', this, '#D8BFD8')">Home</button>
             <button class="tablink" onclick="openPage('Relationships', this, '#D8BFD8')"

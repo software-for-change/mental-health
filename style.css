@@ -568,6 +568,11 @@ input[class=email-field] {
     float: right;
 }
 
+.category-fly img {
+    height: 200px;
+    width: 200px;
+}
+
 .second-category-fly img {
     float: right;
     position: relative;
@@ -917,6 +922,28 @@ input[class=email-field] {
         font-size: medium;
     }
     /***************category-help page********************  */
+    .wilderness-fly img {
+        display: none;
+    }
+    .category-fly {
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 5%;
+    }
+    .category-fly img {
+        height: 100px;
+        width: 100px;
+    }
+    .category-heading {
+        margin-top: 10%;
+    }
+    .category-heading h1 {
+        font-size: medium;
+        letter-spacing: 0px;
+    }
+    .vl {
+        display: none;
+    }
 }
 
 
