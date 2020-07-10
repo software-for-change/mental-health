@@ -818,33 +818,44 @@ input[class=email-field] {
 @media only screen and (max-width: 600px) {
     /************** styling for the home page ***************/
     .header-img img {
-        height: 150px;
-        width: 150px;
+        height: 100px;
+        width: 100px;
+        margin-top: 10%;
     }
     .bottom-word {
-        font-size: 60px;
+        font-size: 30px;
         text-align: center;
     }
+    .browse-icons {
+        padding-top: 30px;
+        margin-top: 10%;
+    }
+    .browse-icons h3 {
+        font-size: medium;
+    }
     .top-word {
-        font-size: 44px;
+        font-size: 25px;
         text-align: center;
     }
     .arrow {
         display: none;
     }
     .nav-description {
-        font-size: xx-large;
+        font-size: small;
+        padding-bottom: 30px;
     }
     .mobile-browse-icons {
         display: block;
-        font-size: 40px;
     }
-    .desktop-browse-icons {
+    /* .desktop-browse-icons {
         display: none;
-    }
+    } */
     .tablink {
         width: 100%;
         font-size: xx-large;
+    }
+    .heading {
+        margin-top: 17%;
     }
     /********** the index / landing page styling **************/
     .landing-img img {

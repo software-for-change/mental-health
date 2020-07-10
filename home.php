@@ -103,7 +103,7 @@ include_once "access-db.php";
 
 
         <!-- mobile version for the browse nav circle icons  -->
-
+<!-- 
         <div class="mobile-browse-icons w3-padding-64 w3-center w3-theme-l5">
             <div class="w3-row"><br>
 
@@ -139,7 +139,7 @@ include_once "access-db.php";
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
 
 
