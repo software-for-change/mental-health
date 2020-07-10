@@ -911,7 +911,10 @@ input[class=email-field] {
         margin-top: 30%;
         font-size: small;
     }
-    .about-img img {}
+    .form h1 {
+        letter-spacing: 0px;
+        font-size: medium;
+    }
 }
 
 
