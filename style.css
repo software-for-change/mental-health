@@ -117,12 +117,6 @@ ul.topnav li.right {
     font-size: 88px;
 }
 
-@media screen and (max-width: 600px) {
-    .bottom-word {
-        font-size: 18px;
-    }
-}
-
 
 /* bouncing arrow */
 
@@ -370,9 +364,6 @@ footer {
     .sidebar a {
         float: left;
     }
-    /* div.content {
-margin-left: 0;
-} */
 }
 
 @media screen and (max-width: 400px) {
