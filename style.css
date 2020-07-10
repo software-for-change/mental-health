@@ -594,8 +594,8 @@ input[class=email-field] {
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
+    font-size: medium;
+    width: 50%;
 }
 
 .tablink:hover {
@@ -847,15 +847,21 @@ input[class=email-field] {
     .mobile-browse-icons {
         display: block;
     }
-    /* .desktop-browse-icons {
-        display: none;
-    } */
     .tablink {
-        width: 100%;
-        font-size: xx-large;
+        font-size: small;
     }
     .heading {
         margin-top: 17%;
+    }
+    .heading h1 {
+        line-height: 0px;
+    }
+    /* remove the top padding for mobile versions on the nav circle icons */
+    .browse-icons .w3-padding-64 {
+        padding-top: 0px;
+    }
+    .categories h3 {
+        font-size: large;
     }
     /********** the index / landing page styling **************/
     .landing-img img {

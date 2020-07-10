@@ -102,45 +102,6 @@ include_once "access-db.php";
         </div>
 
 
-        <!-- mobile version for the browse nav circle icons  -->
-<!-- 
-        <div class="mobile-browse-icons w3-padding-64 w3-center w3-theme-l5">
-            <div class="w3-row"><br>
-
-                <div class="w3-half">
-                    <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
-
-                    <p> <a href="category-validate.php">Signs of mental abuse</a> </p>
-
-
-                </div>
-
-                <div class="w3-half">
-                    <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
-
-                    <p> <a href="category-help.php">How to get Help</a> </p>
-
-                </div>
-
-
-
-            </div>
-
-            <div class="w3-row">
-
-                <div class="w3-half">
-                    <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
-                    <p><a href="recommend.php">Recommend a Resource </a></p>
-                </div>
-
-                <div class="w3-half">
-                    <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
-                    <p><a href="volunteer.html">Volunteer </a></p>
-                </div>
-
-            </div>
-        </div> -->
-
 
 
         <hr class="cat-divider">
