@@ -952,7 +952,36 @@ input[class=email-field] {
 
 /* tablets with low resolution - regular tabs */
 
-@media only screen and (max-width: 768px) and (max-width: 1025px) {
+@media only screen and (max-width: 768px) {
+    /***************category-help page********************  */
+    .category-heading h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: large;
+        letter-spacing: 0px;
+    }
+    .category-heading {
+        width: 100%;
+        margin-top: 0px;
+    }
+    .category-fly {
+        margin: 0;
+    }
+    .wilderness-fly img {
+        height: 200px;
+        width: 200px;
+    }
+    .category-header-sec {
+        padding-bottom: 0px;
+    }
+    .category-desc {
+        font-size: medium;
+    }
+}
+
+
+/* larger size tablets  */
+
+@media only screen and (max-width: 1024px) {
     /***************category-help page********************  */
     .category-heading h1 {
         font-family: 'Roboto', sans-serif;
