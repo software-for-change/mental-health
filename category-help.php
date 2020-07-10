@@ -61,7 +61,7 @@ include_once "access-db.php";
                         <img src="images/butterfly.png" alt="">
                     </div>
                     <div class="wilderness-fly">
-                        <img src="images/wilderness-butterfly.jpg" alt="">
+                        <img src="images/nature-leaves.jpg" alt="">
                     </div>
                 </div>
 

@@ -901,7 +901,7 @@ input[class=email-field] {
     .aboutButton {
         color: white;
     }
-    /* ********** about page ***************** */
+    /* ********** about page and recommend page ***************** */
     .about-card,
     .recommend-card {
         display: block;
@@ -911,10 +911,12 @@ input[class=email-field] {
         margin-top: 30%;
         font-size: small;
     }
+    /* re-size the heading for the recommned page */
     .form h1 {
         letter-spacing: 0px;
         font-size: medium;
     }
+    /***************category-help page********************  */
 }
 
 
