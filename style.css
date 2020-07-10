@@ -957,9 +957,11 @@ input[class=email-field] {
     .category-heading h1 {
         font-family: 'Roboto', sans-serif;
         font-size: large;
+        letter-spacing: 0px;
     }
     .category-heading {
         width: 100%;
+        margin-top: 0px;
     }
     .category-fly {
         margin: 0;
@@ -967,5 +969,11 @@ input[class=email-field] {
     .wilderness-fly img {
         height: 200px;
         width: 200px;
+    }
+    .category-header-sec {
+        padding-bottom: 0px;
+    }
+    .category-desc {
+        font-size: medium;
     }
 }
