@@ -825,6 +825,36 @@ input[class=email-field] {
 /* mobile phone (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
+    /************** styling for the home page ***************/
+    .header-img img {
+        height: 150px;
+        width: 150px;
+    }
+    .bottom-word {
+        font-size: 60px;
+        text-align: center;
+    }
+    .top-word {
+        font-size: 44px;
+        text-align: center;
+    }
+    .arrow {
+        display: none;
+    }
+    .nav-description {
+        font-size: xx-large;
+    }
+    .mobile-browse-icons {
+        display: block;
+        font-size: 40px;
+    }
+    .desktop-browse-icons {
+        display: none;
+    }
+    .tablink {
+        width: 100%;
+        font-size: xx-large;
+    }
     /********** the index / landing page styling **************/
     .landing-img img {
         height: 50px;
@@ -863,44 +893,7 @@ input[class=email-field] {
     .aboutButton {
         color: white;
     }
-    /************** styling for the home page ***************/
-    .header-img img {
-        height: 150px;
-        width: 150px;
-    }
-    .bottom-word {
-        font-size: 60px;
-        text-align: center;
-    }
-    .top-word {
-        font-size: 44px;
-        text-align: center;
-    }
-    .arrow {
-        display: none;
-    }
-    .nav-description {
-        font-size: xx-large;
-    }
-    .mobile-browse-icons {
-        display: block;
-        font-size: 40px;
-    }
-    .desktop-browse-icons {
-        display: none;
-    }
-    .tablink {
-        width: 100%;
-        font-size: xx-large;
-    }
 }
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (min-width: 600px) {
-    .landing-img img {
-        height: 50px;
-        width: 50px;
-    }
-}
