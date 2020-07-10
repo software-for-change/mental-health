@@ -956,7 +956,7 @@ input[class=email-field] {
     /***************category-help page********************  */
     .category-heading h1 {
         font-family: 'Roboto', sans-serif;
-        font-size: large;
+        font-size: xx-large;
         letter-spacing: 0px;
     }
     .category-heading {
@@ -996,13 +996,20 @@ input[class=email-field] {
         margin: 0;
     }
     .wilderness-fly img {
-        height: 200px;
-        width: 200px;
+        height: 300px;
+        width: 300px;
+    }
+    .category-fly img {
+        height: 300px;
+        width: 300px;
     }
     .category-header-sec {
         padding-bottom: 0px;
     }
     .category-desc {
-        font-size: medium;
+        font-size: x-large;
+    }
+    .category-content h3 {
+        font-size: xx-large;
     }
 }
