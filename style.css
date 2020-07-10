@@ -854,11 +854,11 @@ input[class=email-field] {
         margin-top: 17%;
     }
     .heading h1 {
-        line-height: 0px;
+        line-height: 42px;
     }
     /* remove the top padding for mobile versions on the nav circle icons */
     .browse-icons .w3-padding-64 {
-        padding-top: 0px;
+        padding-top: 0px!important;
     }
     .categories h3 {
         font-size: large;
