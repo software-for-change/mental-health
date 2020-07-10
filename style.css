@@ -910,6 +910,7 @@ input[class=email-field] {
         padding-top: 5%;
         /* padding-bottom: 100px; */
         width: 100%;
+        margin: 0;
     }
     .about-img img {}
 }
