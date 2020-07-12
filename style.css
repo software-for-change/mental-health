@@ -962,7 +962,8 @@ input[class=email-field] {
     /***************category-help page********************  */
     .category-heading h1 {
         font-family: 'Roboto', sans-serif;
-        font-size: x-large;
+        font-size: large;
+        margin-top: 20%;
         letter-spacing: 0px;
     }
     .category-heading {
