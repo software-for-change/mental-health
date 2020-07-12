@@ -958,7 +958,7 @@ input[class=email-field] {
   ##Screen = B/w 481px to 767px
 */
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 787px) {
     /***************category-help page********************  */
     .category-heading h1 {
         font-family: 'Roboto', sans-serif;
@@ -987,9 +987,9 @@ input[class=email-field] {
 
 /* larger size tablets  */
 
-@media only screen and (min-width:769px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     /***************category-help page********************  */
-    .category-heading h1 {
+    /* .category-heading h1 {
         font-family: 'Roboto', sans-serif;
         font-size: xx-large;
         letter-spacing: 0px;
@@ -1026,5 +1026,5 @@ input[class=email-field] {
     }
     ul.topnav li a {
         font-size: x-large;
-    }
+    } */
 }
