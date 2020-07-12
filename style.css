@@ -992,7 +992,8 @@ input[class=email-field] {
     /***************category-help page********************  */
     .category-heading h1 {
         font-family: 'Roboto', sans-serif;
-        font-size: xx-large;
+        font-size: x-large;
+        margin-top: 20%;
         letter-spacing: 0px;
     }
     .category-heading {
@@ -1026,6 +1027,9 @@ input[class=email-field] {
         font-size: x-large;
     }
     ul.topnav li a {
+        font-size: x-large;
+    }
+    .article-container ul li a {
         font-size: x-large;
     }
 }
