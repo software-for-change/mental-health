@@ -820,7 +820,7 @@ input[class=email-field] {
 
 /* mobile phone (phones, 600px and down) */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
     /************** styling for the home page ***************/
     .header-img img {
         height: 100px;
