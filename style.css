@@ -958,7 +958,7 @@ input[class=email-field] {
   ##Screen = B/w 481px to 767px
 */
 
-@media only screen and (max-width: 787px) {
+@media only screen and (min-width: 481px) and (max-width: 787px) {
     /***************category-help page********************  */
     .category-heading h1 {
         font-family: 'Roboto', sans-serif;
