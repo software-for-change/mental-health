@@ -64,7 +64,7 @@ ul.topnav li a {
     text-decoration: none;
 }
 
-ul.topnav li a.active {
+ul.topnav li a:active {
     background-color: #4CAF50;
 }
 
