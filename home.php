@@ -32,23 +32,7 @@ include_once "access-db.php";
         <!-- top header section -->
         <div id="home" class="header-sec">
             <!-- nav bar -->
-            <ul class="topnav">
-                <li><a class="logo" href="#home">Journey to Mental Wealth</a></li>
-
-                <li class="right"><a href="recommend.php">Recommend a Resource</a></li>
-                <li class="right"><a href="about.html">About</a></li>
-            </ul>
-
-            <!-- mobile navigation -->
-            <div id="mySidepanel" class="sidepanel">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
-            </div>
-
-            <button class="openbtn mobile-nav" onclick="openNav()">☰ Toggle Sidepanel</button>
+            <?php include 'header.php';?>
 
             <div class="header-img">
                 <img src="images/head.png" alt="">
@@ -248,7 +232,7 @@ include_once "access-db.php";
     <script src="index.js"></script>
     <script>
     function openNav() {
-        document.getElementById("mySidepanel").style.width = "250px";
+        document.getElementById("mySidepanel").style.width = "700px";
     }
 
     function closeNav() {

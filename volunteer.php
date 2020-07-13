@@ -22,12 +22,7 @@
         <!-- header section -->
         <div class="header-sec about-header">
             <!-- nav bar -->
-            <ul class="topnav">
-                <li><a class="logo" href="home.php">Journey to Mental Wealth</a></li>
-
-                <li class="right"><a href="recommend.php">Recommend a Resource</a></li>
-                <li class="right"><a href="about.html">About</a></li>
-            </ul>
+            <?php include 'header.php';?>
 
 
         </div>
