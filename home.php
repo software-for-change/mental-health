@@ -48,7 +48,7 @@ include_once "access-db.php";
                 <a href="#">Contact</a>
             </div>
 
-            <button class="openbtn" onclick="openNav()">☰ Toggle Sidepanel</button>
+            <button class="openbtn mobile-nav" onclick="openNav()">☰ Toggle Sidepanel</button>
 
             <div class="header-img">
                 <img src="images/head.png" alt="">

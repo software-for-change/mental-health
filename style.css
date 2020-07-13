@@ -97,7 +97,9 @@ ul.topnav li.right {
 
 /* mobile nav */
 
-.mobile-nav {}
+.mobile-nav {
+    display: none;
+}
 
 
 /* heading, page title */
@@ -947,6 +949,12 @@ body .wrapper .speechbubble .username:before {
     }
     .mental-qtns {
         height: 100%;
+    }
+    .topnav {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
     }
     /* ********** about page and recommend page ***************** */
     .about-card,
