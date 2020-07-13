@@ -25,7 +25,7 @@ include_once "access-db.php";
         <a href="volunteer.html">Volunteer</a>
         <a href="recommend.php">recommend</a>
         <a href="about.html">About</a> -->
-    </div>
+    <!-- </div> -->
 
     <div class="content">
 
@@ -38,6 +38,18 @@ include_once "access-db.php";
                 <li class="right"><a href="recommend.php">Recommend a Resource</a></li>
                 <li class="right"><a href="about.html">About</a></li>
             </ul>
+
+            <!-- mobile navigation -->
+            <div id="myNav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <span class="mobile-nav"  onclick="openNav()">&#9776; </span>
 
             <div class="header-img">
                 <img src="images/head.png" alt="">
@@ -236,10 +248,13 @@ include_once "access-db.php";
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <script>
-    $(document).ready(function() {
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
 
-
-    });
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
     </script>
 
 </body>

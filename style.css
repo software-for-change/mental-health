@@ -12,7 +12,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    background-color: var(--shadeofwhite);
+    background-color: white;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -92,6 +92,16 @@ ul.topnav li.right {
     ul.topnav li {
         float: none;
     }
+}
+
+
+/* mobile nav */
+
+.mobile-nav {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
 }
 
 
@@ -238,17 +248,6 @@ a {
     content: "";
     display: table;
     clear: both;
-}
-
-
-/* Responsive columns */
-
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
 }
 
 
@@ -882,6 +881,16 @@ body .wrapper .speechbubble .username:before {
     }
     .categories h3 {
         font-size: large;
+    }
+    .category-cards {
+        margin-top: 0px;
+    }
+    .column {
+        width: 50%;
+        margin-bottom: 0px;
+    }
+    .paper {
+        width: 100%;
     }
     /********** the index / landing page styling **************/
     .thought {
