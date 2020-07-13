@@ -231,13 +231,7 @@ include_once "access-db.php";
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <script>
-    function openNav() {
-        document.getElementById("mySidepanel").style.width = "700px";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidepanel").style.width = "0";
-    }
+    
     </script>
 
 </body>
