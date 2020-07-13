@@ -892,6 +892,12 @@ body .wrapper .speechbubble .username:before {
     .paper {
         width: 100%;
     }
+    .mobile-nav {
+        display: block;
+    }
+    .topnav {
+        display: none;
+    }
     /********** the index / landing page styling **************/
     .thought {
         max-width: 100px;
