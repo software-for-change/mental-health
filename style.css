@@ -98,7 +98,7 @@ ul.topnav li.right {
 /* mobile nav */
 
 .mobile-nav {
-    display: none;
+    display: block;
     font-size: 30px;
     cursor: pointer;
     float: right;
