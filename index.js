@@ -1,3 +1,12 @@
+// the first 2 functions control the open and close for the overlay for the nav for the mobile naviagtion
+function openNav() {
+    document.getElementById("mySidepanel").style.width = "500px";
+}
+
+function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+}
+
 // this is the code for the tabs that show the contnet on the help and naviagte pages
 function openPage(pageName, elmnt, color) {
     var i, tabcontent, tablinks;
