@@ -22,12 +22,6 @@ include_once "access-db.php";
 </head>
 
 <body>
-    <!-- <div class="w3-center sidebar">
-        <a class="active" href="home.php">Home</a>
-        <a href="volunteer.html">Volunteer</a>
-        <a href="recommend.php">recommend</a>
-        <a href="about.html">About</a>
-    </div> -->
 
     <div class="content category-content">
 
@@ -35,7 +29,7 @@ include_once "access-db.php";
         <div class="header-sec category-header-sec">
             <!-- nav bar -->
             <?php include 'header.php';?>
-            
+
             <div class="w3-row w3-padding-64">
 
                 <div class="w3-third">
@@ -52,7 +46,7 @@ include_once "access-db.php";
                 </div>
 
                 <div class="w3-third">
-                    
+
                     <div class="wilderness-fly">
                         <img src="images/nature-leaves.png" alt="">
                     </div>
@@ -65,7 +59,8 @@ include_once "access-db.php";
         <!-- end of header -->
 
         <h3 class="w3-center">Cateogry: Signs of mental abuse</h3>
-        <p class="category-desc w3-center w3-padding-16">These articles describe different ways in which people can cope and are meant to give you ideas on how to deal but don't subsitute therapy.</p>
+        <p class="category-desc w3-center w3-padding-16">These articles describe different ways in which people can cope
+            and are meant to give you ideas on how to deal but don't subsitute therapy.</p>
 
         <div class="category-links">
             <button class="tablink" onclick="openPage('Home', this, '#D8BFD8')">Home</button>
@@ -218,27 +213,7 @@ include_once "access-db.php";
 
     <!-- footer design -->
     <hr class="cat-divider">
-    <footer>
-        <div class="w3-row">
-
-            <div class="w3-third w3-center">
-                <p>
-                    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">wandika</a>
-                </p>
-            </div>
-
-            <div class="w3-third w3-center">
-                <p class="w3-center"> Copy right 2020</p>
-            </div>
-
-            <div class="w3-third w3-center">
-                <p>Contact Us</p>
-                <a href="https://icons8.com/icon/pmiijGGgOR0N/butterfly">Butterfly icon by Icons8</a>
-            </div>
-
-        </div>
-    </footer>
-
+    <?php include 'footer.php';?>
 
     </div>
 

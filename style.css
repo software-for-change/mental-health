@@ -64,8 +64,9 @@ ul.topnav li a {
     text-decoration: none;
 }
 
-ul.topnav li a:active {
-    background-color: #4CAF50;
+ul.topnav li a:visited {
+    background-color: var(--grape);
+    text-decoration: underline;
 }
 
 ul.topnav li.right {
