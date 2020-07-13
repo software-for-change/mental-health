@@ -12,7 +12,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    background-color: var(--grape);
+    background-color: var(--shadeofwhite);
     -webkit-text-size-adjust: 100%;
 }
 
@@ -382,10 +382,11 @@ html {
 }
 
 .bgimg {
-    /* background-image: url('road.jpg'); */
     min-height: 100%;
-    background-position: center;
-    background-size: cover;
+}
+
+.index-body {
+    background-color: orange;
 }
 
 
@@ -398,6 +399,7 @@ html {
     margin: 0;
     align-items: center;
     align-content: center;
+    height: 100vh;
 }
 
 .thought {
@@ -445,8 +447,8 @@ html {
 /* chat side  */
 
 .chat-box {
-    /* margin-top: 5%; */
-    background-color: black;
+    height: 100vh;
+    background-color: white;
 }
 
 .cf {
@@ -898,6 +900,9 @@ body .wrapper .speechbubble .username:before {
     }
     .no-mobile {
         display: none;
+    }
+    .mental-qtns {
+        height: 100%;
     }
     /* ********** about page and recommend page ***************** */
     .about-card,
