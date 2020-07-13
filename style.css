@@ -12,7 +12,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    background-color: var(--shadeofwhite);
+    background-color: var(--grape);
     -webkit-text-size-adjust: 100%;
 }
 
@@ -386,7 +386,6 @@ html {
     min-height: 100%;
     background-position: center;
     background-size: cover;
-    padding: 10px;
 }
 
 
@@ -445,7 +444,10 @@ html {
 
 /* chat side  */
 
-.chat-box {}
+.chat-box {
+    /* margin-top: 5%; */
+    background-color: black;
+}
 
 .cf {
     *zoom: 1;
@@ -880,42 +882,22 @@ body .wrapper .speechbubble .username:before {
         font-size: large;
     }
     /********** the index / landing page styling **************/
-    .landing-img img {
-        height: 50px;
-        width: 50px;
+    .thought {
+        max-width: 100px;
+        font-size: 12px;
     }
-    .index-heading h3 {
-        font-size: xx-large;
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
+    body .wrapper .speechbubble {
+        padding: 4px 5px;
+        /* margin-bottom: 48px; */
     }
-    .index-heading {
-        margin-top: 0;
+    body .wrapper .speechbubble:nth-child(2n + 1):after {
+        left: 328px;
     }
-    .index-heading p {
-        text-align: center;
+    body .wrapper {
+        margin-top: 10%;
     }
-    .glow {
-        display: inline-block;
-        font-size: medium;
-        color: black;
-        font-weight: 500;
-        padding-top: 10%;
-        -webkit-animation: glow 1s ease-in-out infinite alternate;
-        -moz-animation: glow 1s ease-in-out infinite alternate;
-        animation: glow 1s ease-in-out infinite alternate;
-    }
-    @-webkit-keyframes glow {
-        from {
-            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-        }
-        to {
-            text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-        }
-    }
-    .aboutButton {
-        color: white;
+    .no-mobile {
+        display: none;
     }
     /* ********** about page and recommend page ***************** */
     .about-card,
