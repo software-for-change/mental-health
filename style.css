@@ -527,7 +527,7 @@ body .wrapper .speechbubble .username:before {
 /* ***************************CATEGORY PAGE *************************** */
 
 .category-content {
-    width: 1600px;
+    max-width: 1600px;
 }
 
 .category-header-sec {
@@ -909,13 +909,6 @@ body .wrapper .speechbubble .username:before {
 */
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    /* nav bar */
-    .topnav {
-        display: none;
-    }
-    .mobile-nav {
-        display: block;
-    }
     /***************category-help page********************  */
     .category-heading h1 {
         font-family: 'Roboto', sans-serif;
@@ -946,13 +939,6 @@ body .wrapper .speechbubble .username:before {
 /* larger size tablets  */
 
 @media only screen and (min-width:769px) and (max-width: 1024px) {
-    /* nav bar */
-    .topnav {
-        display: none;
-    }
-    .mobile-nav {
-        display: block;
-    }
     /***************category-help page********************  */
     .category-heading h1 {
         font-family: 'Roboto', sans-serif;
