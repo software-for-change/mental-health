@@ -40,16 +40,7 @@ include_once "access-db.php";
             </ul>
 
             <!-- mobile navigation -->
-            <div id="myNav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a>
-                </div>
-            </div>
-            <span class="mobile-nav"  onclick="openNav()">&#9776; </span>
+           
 
             <div class="header-img">
                 <img src="images/head.png" alt="">
