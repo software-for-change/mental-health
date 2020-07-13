@@ -9,11 +9,23 @@
 
 /* Style the body */
 
-body {
+body,
+html {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color: white;
     -webkit-text-size-adjust: 100%;
+    height: 100%;
+}
+
+
+/* define the fonts  */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -28,9 +40,6 @@ body {
     position: relative;
     top: 30%;
 }
-
-
-/******************* home page ******************* */
 
 
 /* content class to determine the width for all the content on all pages*/
@@ -131,6 +140,19 @@ ul.topnav li.right {
 }
 
 
+/* footer design */
+
+footer {
+    padding: 10px;
+    height: 10vh;
+    color: gray;
+    font-size: 12px;
+}
+
+
+/******************* home page ******************* */
+
+
 /* heading, page title */
 
 .heading {
@@ -138,7 +160,6 @@ ul.topnav li.right {
 }
 
 .heading h1 {
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     letter-spacing: -3px;
     line-height: 90px;
@@ -226,18 +247,11 @@ a {
     display: inline-block;
 }
 
-.mobile-browse-icons {
-    display: none;
-}
 
-
-/* page nav title */
+/* center the browse heading and description text on the home page  */
 
 .browse-icons h3,
-.categories h3 {
-    text-align: center;
-}
-
+.categories h3,
 .nav-description {
     text-align: center;
 }
@@ -252,9 +266,9 @@ a {
 }
 
 
-/* Category cards, Float four columns side by side */
+/* Category cards, Float four  paper-colums side by side */
 
-.column {
+.paper-cols {
     float: left;
     width: 25%;
     padding: 0 20px 30px;
@@ -268,16 +282,13 @@ a {
 }
 
 
-/* Clear floats after the columns */
+/* Clear floats after the  paper-colss */
 
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
-
-/* Style the category cards */
 
 
 /* create space between the title and the hr line */
@@ -288,15 +299,6 @@ a {
 
 .paper h3 {
     color: var(--grape);
-}
-
-.recommend-link {
-    font-size: 12px;
-    color: gray;
-}
-
-.recommend-link :hover {
-    text-decoration: underline;
 }
 
 .paper {
@@ -342,69 +344,7 @@ a {
 }
 
 
-/* footer design */
-
-footer {
-    padding: 10px;
-    height: 10vh;
-    color: gray;
-    font-size: 12px;
-}
-
-
-/* side nav bar styling */
-
-.sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    padding-top: 400px;
-}
-
-.sidebar a {
-    display: block;
-    color: #696969;
-    padding: 16px;
-    text-decoration: none;
-}
-
-.sidebar a.active {
-    text-decoration: underline;
-}
-
-.sidebar a:hover:not(.active) {
-    text-decoration: underline;
-    color: #431c53;
-}
-
-@media screen and (max-width: 700px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    .sidebar a {
-        float: left;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .sidebar a {
-        text-align: center;
-        float: none;
-    }
-}
-
-
 /* ***************LANDING PAGE /index*************************** */
-
-body,
-html {
-    height: 100%
-}
 
 .bgimg {
     min-height: 100%;
@@ -586,10 +526,6 @@ body .wrapper .speechbubble .username:before {
 
 /* ***************************CATEGORY PAGE *************************** */
 
-.category-content {
-    max-width: 1600px;
-}
-
 .category-header-sec {
     padding-bottom: 100px;
 }
@@ -651,30 +587,6 @@ body .wrapper .speechbubble .username:before {
     display: none;
     padding: 100px 20px;
     height: 100%;
-}
-
-.rectangle {
-    display: block;
-    height: 80px;
-    width: 250px;
-    position: relative;
-    margin-top: 100px;
-    border-radius: 5px;
-    /* border: 2px solid var(--grape); */
-    background: white;
-}
-
-
-/* positioning the vertical line */
-
-.vl {
-    border-left: 2px solid var(--lightgray);
-    height: 600px;
-    position: absolute;
-    left: 46%;
-    margin-top: 800px;
-    margin-left: -3px;
-    top: 0;
 }
 
 
@@ -889,9 +801,6 @@ body .wrapper .speechbubble .username:before {
         font-size: small;
         padding-bottom: 30px;
     }
-    .mobile-browse-icons {
-        display: block;
-    }
     .tablink {
         font-size: small;
     }
@@ -911,7 +820,7 @@ body .wrapper .speechbubble .username:before {
     .category-cards {
         margin-top: 0px;
     }
-    .column {
+    .paper-cols {
         width: 50%;
         margin-bottom: 0px;
     }

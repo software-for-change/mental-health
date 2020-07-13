@@ -76,7 +76,7 @@ include_once "access-db.php";
 
             <div id="Relationships" class="tabcontent">
                 <h3>Relationships</h3>
-                <div class="vl"></div>
+                
 
                 <div class="w3-row scrollable ">
 
@@ -87,7 +87,7 @@ include_once "access-db.php";
                     if ($new_result->num_rows > 0) {
                        
                         while ($new_row = mysqli_fetch_array($new_result)) {
-                            echo " <div class='w3-half'> ";
+                            
                             echo "<div class='article-container'>";
         
                             
@@ -107,7 +107,7 @@ include_once "access-db.php";
                     }
 
                     echo "
-                                                        </div>
+                                                        
                                                         </div>
                                                         ";
 
@@ -129,7 +129,7 @@ include_once "access-db.php";
                     if ($new_result->num_rows > 0) {
                        
                         while ($new_row = mysqli_fetch_array($new_result)) {
-                            echo " <div class='w3-half'> ";
+                            
                             echo "<div class='article-container'>";
         
                             
@@ -149,7 +149,7 @@ include_once "access-db.php";
                     }
 
                     echo "
-                                                        </div>
+                                                        
                                                         </div>
                                                         ";
 

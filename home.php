@@ -121,7 +121,7 @@ include_once "access-db.php";
                                 if ($result->num_rows > 0) {
 
                                     while ($row = mysqli_fetch_array($result)) {
-                                        echo " <div class='column'> ";
+                                        echo " <div class=' paper-cols'> ";
                                         echo "<div class='paper'>";
 
                                         $category = $row["category_name"];
@@ -130,8 +130,7 @@ include_once "access-db.php";
 
                                         echo "<h3><a href='category-validate.php'>" . $category . "</a></h3>";
                                         echo "<p>" . $resources . " resources </p>";
-                                        echo "<p> <a class='recommend-link' href=''> Recommend a resource </a> </p>";
-
+                            
                                         echo "
                                                                                             </div>
                                                                                             </div>
@@ -160,7 +159,7 @@ include_once "access-db.php";
                                 if ($new_result->num_rows > 0) {
 
                                     while ($new_row = mysqli_fetch_array($new_result)) {
-                                        echo " <div class='column'> ";
+                                        echo " <div class=' paper-cols'> ";
                                         echo "<div class='paper'>";
 
                                         $category = $new_row["category_name"];
@@ -169,8 +168,7 @@ include_once "access-db.php";
 
                                         echo "<h3><a href='category-help.php'>" . $category . "</a></h3>";
                                         echo "<p>" . $resources . " resources </p>";
-                                        echo "<p> <a class='recommend-link' href=''> Recommend a resource </a> </p>";
-
+                                        
                                         echo "
                                                                                             </div>
                                                                                             </div>
