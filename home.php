@@ -40,7 +40,15 @@ include_once "access-db.php";
             </ul>
 
             <!-- mobile navigation -->
-           
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <button class="openbtn" onclick="openNav()">☰ Toggle Sidepanel</button>
 
             <div class="header-img">
                 <img src="images/head.png" alt="">
@@ -240,11 +248,11 @@ include_once "access-db.php";
     <script src="index.js"></script>
     <script>
     function openNav() {
-        document.getElementById("myNav").style.width = "100%";
+        document.getElementById("mySidepanel").style.width = "250px";
     }
 
     function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
+        document.getElementById("mySidepanel").style.width = "0";
     }
     </script>
 
