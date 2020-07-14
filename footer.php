@@ -16,6 +16,7 @@ echo "    <footer>
 
     <div class='w3-third w3-center'>
         <p>Contact Us</p>
+        <div class='w3-container'>
         <button onclick='document.getElementById('id01').style.display='block'' class='w3-button w3-black'>Feedback</button>
         <div id='id01' class='w3-modal'>
         <div class='w3-modal-content'>
@@ -26,6 +27,7 @@ echo "    <footer>
           </div>
         </div>
       </div>
+    </div>
     </div>
 
 </div>
