@@ -177,7 +177,7 @@ footer {
 
 /* bouncing arrow */
 
-a {
+.arrow a {
     text-decoration: none;
 }
 
@@ -933,6 +933,19 @@ body .wrapper .speechbubble .username:before {
     .category-desc {
         font-size: medium;
     }
+    /* ***************HOME PAGE******************** */
+    .paper a {
+        font-size: large;
+    }
+    .bottom-word {
+        font-size: 66px;
+    }
+    .header-img img {
+        width: 200px;
+    }
+    .nav-description {
+        font-size: large;
+    }
 }
 
 
@@ -980,6 +993,24 @@ body .wrapper .speechbubble .username:before {
         font-size: x-large;
     }
     .article-container ul li a {
+        font-size: x-large;
+    }
+    /* ***************HOME PAGE******************** */
+    .paper a {
+        font-size: x-large;
+    }
+    .bottom-word {
+        font-size: 77px;
+    }
+    .header-img img {
+        width: 300px;
+    }
+    .nav-description {
+        font-size: x-large;
+    }
+    /* ***********Recommend page and about******************** */
+    .contact-input label,
+    .story p {
         font-size: x-large;
     }
 }
