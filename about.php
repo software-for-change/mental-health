@@ -31,12 +31,6 @@
 
 
         <div class="about-card w3-center">
-
-            <!-- head image -->
-            <div class="about-img header-img">
-                <img src="images/head.png" alt="">
-            </div>
-
             <!-- page title -->
             <div class="w3-center about-heading">
                 <h1>.about.</h1>
@@ -65,10 +59,6 @@
 
 
     </div>
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <script>
     </script>
