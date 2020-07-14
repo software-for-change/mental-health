@@ -22,8 +22,14 @@ echo "    <footer>
         <div class='w3-modal-content'>
           <div class='w3-container'>
             <span onclick=\"document.getElementById('id01').style.display='none'\" class='w3-button w3-display-topright'>&times;</span>
-            <p>Some text. Some text. Some text.</p>
-            <p>Some text. Some text. Some text.</p>
+            <p>PLease let us know any feedback you have</p>
+            <form action='action_page.php'>
+            <textarea placeholder='Tell us what you think' name='feedback' rows='4' cols='50'>
+            </textarea>
+            <br><br>
+            <input type='submit' value='Submit'>
+            </form>
+
           </div>
         </div>
       </div>
