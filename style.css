@@ -934,7 +934,7 @@ body .wrapper .speechbubble .username:before {
         font-size: medium;
     }
     /* ***************HOME PAGE******************** */
-    .paper a {
+    a {
         font-size: large;
     }
     .bottom-word {
@@ -996,7 +996,7 @@ body .wrapper .speechbubble .username:before {
         font-size: x-large;
     }
     /* ***************HOME PAGE******************** */
-    .paper a {
+    a {
         font-size: x-large;
     }
     .bottom-word {
