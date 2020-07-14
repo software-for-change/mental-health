@@ -82,7 +82,7 @@ include_once "access-db.php";
 
                     <div class="w3-quarter">
                         <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
-                        <p><a href="volunteer.html">Volunteer </a></p>
+                        <p><a href="volunteer.php">Volunteer </a></p>
                     </div>
 
                 </div>
