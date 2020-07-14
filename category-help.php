@@ -14,7 +14,7 @@ include_once "access-db.php";
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?Depression=Roboto:wght@100;200;300;400;500;700&display=swap"
         rel="stylesheet">
 </head>
 
@@ -63,7 +63,7 @@ include_once "access-db.php";
             <button class="tablink" onclick="openPage('Relationships', this, '#D8BFD8')"
                 id="defaultOpen">Relationships</button>
             <button class="tablink" onclick="openPage('Religious', this, '#D8BFD8')">Religious</button>
-            <button class="tablink" onclick="openPage('Family', this, '#D8BFD8')">Family</button>
+            <button class="tablink" onclick="openPage('Depression', this, '#D8BFD8')">Depression</button>
 
             <div id="Home" class="tabcontent">
                 <h3>Home</h3>
@@ -99,7 +99,7 @@ include_once "access-db.php";
 
                         }
                     } else {
-                        $_SESSION["message"] =  "No results were found in the family category.";
+                        $_SESSION["message"] =  "No results were found in the Depression category.";
                     }
 
                     echo "
@@ -141,7 +141,7 @@ include_once "access-db.php";
 
                         }
                     } else {
-                        $_SESSION["message"] =  "No results were found in the family category.";
+                        $_SESSION["message"] =  "No results were found in the Depression category.";
                     }
 
                     echo "
@@ -154,7 +154,7 @@ include_once "access-db.php";
                 </div>
             </div>
 
-            <div id="Family" class="tabcontent">
+            <div id="Depression" class="tabcontent">
                 <h3>Depression</h3>
 
                 <div class="vl"></div>
@@ -184,7 +184,7 @@ include_once "access-db.php";
 
                         }
                     } else {
-                        $_SESSION["message"] =  "No results were found in the family category.";
+                        $_SESSION["message"] =  "No results were found in the Depression category.";
                     }
 
                     echo "
