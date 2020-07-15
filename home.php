@@ -142,7 +142,7 @@ include_once "access-db.php";
 
                     <div class="tab">
                         <button class="tablinks" onclick="openSubCategory(event, 'helpfamily')"
-                            id="mainOpen">helpfamily</button>
+                            id="helpmainOpen">helpfamily</button>
                         <button class="tablinks" onclick="openSubCategory(event, 'helpfriends')">helpfriends</button>
                         <button class="tablinks" onclick="openSubCategory(event, 'workschool')">workschool</button>
                     </div>
