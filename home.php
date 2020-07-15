@@ -135,54 +135,18 @@ include_once "access-db.php";
                         <p>Who we are and what we do.</p>
                     </div>
 
-
-                    <!-- the content for the tabs  -->
-                    <!-- <div class="category-cards">
-                        <div class="row">
-
-                            <?php
-                                // $sql = "SELECT category_name, valid_count FROM mental_categories";
-                                // $result = $conn->query($sql);
-                                
-                                // if ($result->num_rows > 0) {
-
-                                //     while ($row = mysqli_fetch_array($result)) {
-                                //         echo " <div class=' paper-cols'> ";
-                                //         echo "<div class='paper'>";
-
-                                //         $category = $row["category_name"];
-
-                                //         $resources = $row["valid_count"];
-
-                                //         echo "<h4><a href='category-validate.php'>" . $category . "</a></h4>";
-                                //         echo "<p>" . $resources . " articles </p>";
-                            
-                                //         echo "
-                                //                                                             </div>
-                                //                                                             </div>
-                                //                                                             ";
-                                //     }
-                                // }
-                                ?>
-
-                        </div>
-
-                    </div> -->
-
-
-
                 </div>
 
                 <div id="Help" class="tabcontent">
 
-                    <button class="subtablink" onclick="openSubCategory('family', this, 'red')">family</button>
+                    <button class="subtablink" onclick="openSubCategory('newfamily', this, 'red')">family</button>
                     <button class="subtablink" onclick="openSubCategory('friends', this, 'green')"
                         id="mainOpen">friends</button>
                     <button class="subtablink" onclick="openSubCategory('workSchool', this, 'blue')">Work &
                         School</button>
                     <button class="subtablink" onclick="openSubCategory('personal', this, 'orange')">personal</button>
 
-                    <div id="family" class="subcategorycontent">
+                    <div id="newfamily" class="subcategorycontent">
                         <h3>family</h3>
                         <p>family is where the heart is..</p>
                     </div>
@@ -201,41 +165,6 @@ include_once "access-db.php";
                         <h3>personal</h3>
                         <p>Who we are and what we do.</p>
                     </div>
-
-                    <!-- <div class="category-cards">
-                        <div class="row">
-                            <?php
-                                // access the resources in each category
-                                // $new_sql = "SELECT category_name, help_count FROM mental_categories";
-                                // $new_result = $conn->query($new_sql);
-
-                                // if ($new_result->num_rows > 0) {
-
-                                //     while ($new_row = mysqli_fetch_array($new_result)) {
-                                //         echo " <div class=' paper-cols'> ";
-                                //         echo "<div class='paper'>";
-
-                                //         $category = $new_row["category_name"];
-
-                                //         $resources = $new_row["help_count"];
-
-                                //         echo "<h4><a href='category-help.php'>" . $category . "</a></h4>";
-                                        
-                                //         echo "<p>" . $resources . " articles </p>";
-                                        
-                                //         echo "
-                                //                                                             </div>
-                                //                                                             </div>
-                                //                                                             ";
-                                //     }
-                                // }
-
-                                ?>
-
-                        </div>
-
-                    </div> -->
-
 
                 </div>
 
