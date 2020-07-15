@@ -141,25 +141,25 @@ include_once "access-db.php";
                     <p>Click on the buttons inside the tabbed menu:</p>
 
                     <div class="tab">
-                        <button class="tablinks" onclick="openSubCategory(event, 'London')"
-                            id="mainOpen">London</button>
-                        <button class="tablinks" onclick="openSubCategory(event, 'Paris')">Paris</button>
-                        <button class="tablinks" onclick="openSubCategory(event, 'Tokyo')">Tokyo</button>
+                        <button class="tablinks" onclick="openSubCategory(event, 'helpfamily')"
+                            id="mainOpen">helpfamily</button>
+                        <button class="tablinks" onclick="openSubCategory(event, 'helpfriends')">helpfriends</button>
+                        <button class="tablinks" onclick="openSubCategory(event, 'workschool')">workschool</button>
                     </div>
 
-                    <div id="London" class="subtabcontent">
-                        <h3>London</h3>
-                        <p>London is the capital city of England.</p>
+                    <div id="helpfamily" class="subtabcontent">
+                        <h3>helpfamily</h3>
+                        <p>helpfamily is the capital city of England.</p>
                     </div>
 
-                    <div id="Paris" class="subtabcontent">
-                        <h3>Paris</h3>
-                        <p>Paris is the capital of France.</p>
+                    <div id="helpfriends" class="subtabcontent">
+                        <h3>helpfriends</h3>
+                        <p>helpfriends is the capital of France.</p>
                     </div>
 
-                    <div id="Tokyo" class="subtabcontent">
-                        <h3>Tokyo</h3>
-                        <p>Tokyo is the capital of Japan.</p>
+                    <div id="workschool" class="subtabcontent">
+                        <h3>workschool</h3>
+                        <p>workschool is the capital of Japan.</p>
                     </div>
 
 
