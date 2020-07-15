@@ -108,7 +108,7 @@ include_once "access-db.php";
                 <button class="tablink" onclick="openPage('Help', this, '#D8BFD8')">How you can Help</button>
 
                 <div id="Validate" class="tabcontent">
-                    <h2>Vertical Tabs</h2>
+                    
                     <p>Click on the buttons inside the tabbed menu:</p>
 
                     <div class="tab">
@@ -119,8 +119,34 @@ include_once "access-db.php";
                     </div>
 
                     <div id="London" class="subtabcontent">
-                        <h3>London</h3>
-                        <p>London is the capital city of England.</p>
+                    <div class="category-cards">
+                        <div class="row">
+
+                            <?php
+                                $sql = "SELECT category_name, valid_count FROM mental_categories";
+                                $result = $conn->query($sql);
+                                // access the resources in each category
+
+                                if ($result->num_rows > 0) {
+
+                                    while ($row = mysqli_fetch_array($result)) {
+                                        echo " <div class=' paper-cols'> ";
+                                        echo "<div class='paper'>";
+
+                                        $category = $row["category_name"];
+
+                                        $resources = $row["valid_count"];
+
+                                        echo "<h4><a href='category-validate.php'>" . $category . "</a></h4>";
+                                        echo "<p>" . $resources . " articles </p>";
+                            
+                                        echo "
+                                                                                            </div>
+                                                                                            </div>
+                                                                                            ";
+                                    }
+                                }
+                                ?>
                     </div>
 
                     <div id="Paris" class="subtabcontent">
@@ -136,8 +162,6 @@ include_once "access-db.php";
                 </div>
 
                 <div id="Help" class="tabcontent">
-
-                    <h2>Vertical Tabs</h2>
                     <p>Click on the buttons inside the tabbed menu:</p>
 
                     <div class="tab">
