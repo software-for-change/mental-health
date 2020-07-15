@@ -108,65 +108,35 @@ include_once "access-db.php";
                 <button class="tablink" onclick="openPage('Help', this, '#D8BFD8')">How you can Help</button>
 
                 <div id="Validate" class="tabcontent">
-                    <button class="subtablink" onclick="openSubCategory('family', this, 'red')">family</button>
-                    <button class="subtablink" onclick="openSubCategory('friends', this, 'green')"
-                        id="mainOpen">friends</button>
-                    <button class="subtablink" onclick="openSubCategory('workSchool', this, 'blue')">Work &
-                        School</button>
-                    <button class="subtablink" onclick="openSubCategory('personal', this, 'orange')">personal</button>
-                    <p>select the tab that you would like to see articles</p>
-                    <div id="family" class="subcategorycontent">
-                        <h3>family</h3>
-                        <p>family is where the heart is..</p>
-                    </div>
-
-                    <div id="friends" class="subcategorycontent">
-                        <h3>friends</h3>
-                        <p>Some friends this fine day!</p>
-                    </div>
-
-                    <div id="workSchool" class="subcategorycontent">
-                        <h3>workSchool</h3>
-                        <p>Get in touch, or swing by for a cup of coffee.</p>
-                    </div>
-
-                    <div id="personal" class="subcategorycontent">
-                        <h3>personal</h3>
-                        <p>Who we are and what we do.</p>
-                    </div>
 
                 </div>
 
                 <div id="Help" class="tabcontent">
 
-                    <button class="subtablink" onclick="openSubCategory('helpfamily', this, 'red')">family</button>
-                    <button class="subtablink" onclick="openSubCategory('helpfriends', this, 'green')"
-                        id="subOpen">friends</button>
-                    <button class="subtablink" onclick="openSubCategory('helpworkSchool', this, 'blue')">Work &
-                        School</button>
-                    <button class="subtablink" onclick="openSubCategory('helppersonal', this, 'orange')">personal</button>
+                    <h2>Vertical Tabs</h2>
+                    <p>Click on the buttons inside the tabbed menu:</p>
 
-                    <p>select the tab that you would like to see articles</p>
-
-                    <div id="helpfamily" class="subcategorycontent">
-                        <h3>family</h3>
-                        <p>family is where the heart is..</p>
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+                        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
                     </div>
 
-                    <div id="helpfriends" class="subcategorycontent">
-                        <h3>friends</h3>
-                        <p>Some friends this fine day!</p>
+                    <div id="London" class="subtabcontent">
+                        <h3>London</h3>
+                        <p>London is the capital city of England.</p>
                     </div>
 
-                    <div id="helpworkSchool" class="subcategorycontent">
-                        <h3>workSchool</h3>
-                        <p>Get in touch, or swing by for a cup of coffee.</p>
+                    <div id="Paris" class="subtabcontent">
+                        <h3>Paris</h3>
+                        <p>Paris is the capital of France.</p>
                     </div>
 
-                    <div id="helppersonal" class="subcategorycontent">
-                        <h3>personal</h3>
-                        <p>Who we are and what we do.</p>
+                    <div id="Tokyo" class="subtabcontent">
+                        <h3>Tokyo</h3>
+                        <p>Tokyo is the capital of Japan.</p>
                     </div>
+
 
                 </div>
 
