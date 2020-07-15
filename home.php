@@ -147,6 +147,12 @@ include_once "access-db.php";
                                     }
                                 }
                                 ?>
+
+                        </div>
+
+                    </div>
+
+
                     </div>
 
                     <div id="Paris" class="subtabcontent">
