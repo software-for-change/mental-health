@@ -112,13 +112,14 @@ include_once "access-db.php";
                     <p>Click on the buttons inside the tabbed menu:</p>
 
                     <div class="tab">
-                        <button class="tablinks" onclick="openSubCategory(event, 'London')"
-                            id="mainOpen">London</button>
-                        <button class="tablinks" onclick="openSubCategory(event, 'Paris')">Paris</button>
-                        <button class="tablinks" onclick="openSubCategory(event, 'Tokyo')">Tokyo</button>
+                        <button class="tablinks" onclick="openSubCategory(event, 'Family')"
+                            id="mainOpen">Family</button>
+                        <button class="tablinks" onclick="openSubCategory(event, 'Friends')">Friends</button>
+                        <button class="tablinks" onclick="openSubCategory(event, 'Personal')">Personal</button>
+                        <button class="tablinks" onclick="openSubCategory(event, 'workandschool')">Work & School</button>
                     </div>
 
-                    <div id="London" class="subtabcontent">
+                    <div id="Family" class="subtabcontent">
                     <div class="category-cards">
                         <div class="row">
 
@@ -155,14 +156,19 @@ include_once "access-db.php";
 
                     </div>
 
-                    <div id="Paris" class="subtabcontent">
-                        <h3>Paris</h3>
-                        <p>Paris is the capital of France.</p>
+                    <div id="Friends" class="subtabcontent">
+                        <h3>Friends</h3>
+                        <p>Friends is the capital of France.</p>
                     </div>
 
-                    <div id="Tokyo" class="subtabcontent">
-                        <h3>Tokyo</h3>
-                        <p>Tokyo is the capital of Japan.</p>
+                    <div id="Personal" class="subtabcontent">
+                        <h3>Personal</h3>
+                        <p>Personal is the capital of Japan.</p>
+                    </div>
+
+                    <div id="workandschool" class="subtabcontent">
+                        <h3>Work & School</h3>
+                        <p>Work is going to be crazy</p>
                     </div>
 
                 </div>
@@ -172,9 +178,10 @@ include_once "access-db.php";
 
                     <div class="tab">
                         <button class="tablinks" onclick="openSubCategory(event, 'helpfamily')"
-                            id="helpmainOpen">helpfamily</button>
-                        <button class="tablinks" onclick="openSubCategory(event, 'helpfriends')">helpfriends</button>
-                        <button class="tablinks" onclick="openSubCategory(event, 'workschool')">workschool</button>
+                            id="helpmainOpen">Family</button>
+                        <button class="tablinks" onclick="openSubCategory(event, 'helpfriends')">Friends</button>
+                        <button class="tablinks" onclick="openSubCategory(event, 'helppersonal')">Personal</button>
+                        <button class="tablinks" onclick="openSubCategory(event, 'workschool')">Work & School</button>
                     </div>
 
                     <div id="helpfamily" class="subtabcontent">
@@ -187,6 +194,10 @@ include_once "access-db.php";
                         <p>helpfriends is the capital of France.</p>
                     </div>
 
+                    <div id="workschool" class="subtabcontent">
+                        <h3>workschool</h3>
+                        <p>workschool is the capital of Japan.</p>
+                    </div>
                     <div id="workschool" class="subtabcontent">
                         <h3>workschool</h3>
                         <p>workschool is the capital of Japan.</p>
