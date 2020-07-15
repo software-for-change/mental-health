@@ -28,18 +28,18 @@ document.getElementById("defaultOpen").click();
 
 
 // the js that controls the sub category content 
-function openSubCategory(pageName, elmnt, color) {
-    var i, subcategorycontent, subtablinks;
-    subcategorycontent = document.getElementsByClassName("subcategorycontent");
-    for (i = 0; i < subcategorycontent.length; i++) {
-        subcategorycontent[i].style.display = "none";
+function openSubCategory(evt, cityName) {
+    var i, subtabcontent, tablinks;
+    subtabcontent = document.getElementsByClassName("subtabcontent");
+    for (i = 0; i < subtabcontent.length; i++) {
+        subtabcontent[i].style.display = "none";
     }
-    subtablinks = document.getElementsByClassName("subtablink");
-    for (i = 0; i < subtablinks.length; i++) {
-        subtablinks[i].style.backgroundColor = "";
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(pageName).style.display = "block";
-    elmnt.style.backgroundColor = color;
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
 }
 
 // Get the element with id="mainOpen" and click on it
