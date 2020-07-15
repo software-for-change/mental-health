@@ -44,4 +44,4 @@ function openSubCategory(evt, cityName) {
 
 // Get the element with id="mainOpen" and click on it
 document.getElementById("mainOpen").click();
-document.getElementById("helpmainOpen").click();
+// document.getElementById("helpmainOpen").click();
