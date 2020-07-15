@@ -108,6 +108,30 @@ include_once "access-db.php";
                 <button class="tablink" onclick="openPage('Help', this, '#D8BFD8')">How you can Help</button>
 
                 <div id="Validate" class="tabcontent">
+                    <h2>Vertical Tabs</h2>
+                    <p>Click on the buttons inside the tabbed menu:</p>
+
+                    <div class="tab">
+                        <button class="tablinks" onclick="openSubCategory(event, 'London')"
+                            id="mainOpen">London</button>
+                        <button class="tablinks" onclick="openSubCategory(event, 'Paris')">Paris</button>
+                        <button class="tablinks" onclick="openSubCategory(event, 'Tokyo')">Tokyo</button>
+                    </div>
+
+                    <div id="London" class="subtabcontent">
+                        <h3>London</h3>
+                        <p>London is the capital city of England.</p>
+                    </div>
+
+                    <div id="Paris" class="subtabcontent">
+                        <h3>Paris</h3>
+                        <p>Paris is the capital of France.</p>
+                    </div>
+
+                    <div id="Tokyo" class="subtabcontent">
+                        <h3>Tokyo</h3>
+                        <p>Tokyo is the capital of Japan.</p>
+                    </div>
 
                 </div>
 
@@ -117,7 +141,8 @@ include_once "access-db.php";
                     <p>Click on the buttons inside the tabbed menu:</p>
 
                     <div class="tab">
-                        <button class="tablinks" onclick="openSubCategory(event, 'London')" id="mainOpen">London</button>
+                        <button class="tablinks" onclick="openSubCategory(event, 'London')"
+                            id="mainOpen">London</button>
                         <button class="tablinks" onclick="openSubCategory(event, 'Paris')">Paris</button>
                         <button class="tablinks" onclick="openSubCategory(event, 'Tokyo')">Tokyo</button>
                     </div>
