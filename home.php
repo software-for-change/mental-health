@@ -167,6 +167,7 @@ include_once "access-db.php";
                                         $resources = $new_row["help_count"];
 
                                         echo "<h4><a href='category-help.php'>" . $category . "</a></h4>";
+                                        
                                         echo "<p>" . $resources . " articles </p>";
                                         
                                         echo "

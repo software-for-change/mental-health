@@ -296,8 +296,8 @@ a {
     margin-top: 50px;
 }
 
-.paper h3 {
-    color: var(--grape);
+.paper h4 {
+    padding-bottom: 90px;
 }
 
 .paper {
