@@ -44,3 +44,4 @@ function openSubCategory(pageName, elmnt, color) {
 
 // Get the element with id="mainOpen" and click on it
 document.getElementById("mainOpen").click();
+document.getElementById("subOpen").click();

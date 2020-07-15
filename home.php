@@ -141,7 +141,7 @@ include_once "access-db.php";
 
                     <button class="subtablink" onclick="openSubCategory('helpfamily', this, 'red')">family</button>
                     <button class="subtablink" onclick="openSubCategory('helpfriends', this, 'green')"
-                        id="mainOpen">friends</button>
+                        id="subOpen">friends</button>
                     <button class="subtablink" onclick="openSubCategory('helpworkSchool', this, 'blue')">Work &
                         School</button>
                     <button class="subtablink" onclick="openSubCategory('helppersonal', this, 'orange')">personal</button>
