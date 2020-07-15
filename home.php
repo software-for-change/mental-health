@@ -128,7 +128,7 @@ include_once "access-db.php";
 
                                         $resources = $row["valid_count"];
 
-                                        echo "<h3><a href='category-validate.php'>" . $category . "</a></h3>";
+                                        echo "<h4><a href='category-validate.php'>" . $category . "</a></h4>";
                                         echo "<p>" . $resources . " articles </p>";
                             
                                         echo "
@@ -166,7 +166,7 @@ include_once "access-db.php";
 
                                         $resources = $new_row["help_count"];
 
-                                        echo "<h3><a href='category-help.php'>" . $category . "</a></h3>";
+                                        echo "<h4><a href='category-help.php'>" . $category . "</a></h4>";
                                         echo "<p>" . $resources . " articles </p>";
                                         
                                         echo "

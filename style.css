@@ -303,7 +303,6 @@ a {
 .paper {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
-    text-align: center;
     position: relative;
     background-color: #f1f1f1;
 }
