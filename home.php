@@ -139,29 +139,29 @@ include_once "access-db.php";
 
                 <div id="Help" class="tabcontent">
 
-                    <button class="subtablink" onclick="openSubCategory('newfamily', this, 'red')">family</button>
-                    <button class="subtablink" onclick="openSubCategory('friends', this, 'green')"
+                    <button class="subtablink" onclick="openSubCategory('helpfamily', this, 'red')">family</button>
+                    <button class="subtablink" onclick="openSubCategory('helpfriends', this, 'green')"
                         id="mainOpen">friends</button>
-                    <button class="subtablink" onclick="openSubCategory('workSchool', this, 'blue')">Work &
+                    <button class="subtablink" onclick="openSubCategory('helpworkSchool', this, 'blue')">Work &
                         School</button>
-                    <button class="subtablink" onclick="openSubCategory('personal', this, 'orange')">personal</button>
+                    <button class="subtablink" onclick="openSubCategory('helppersonal', this, 'orange')">personal</button>
 
-                    <div id="newfamily" class="subcategorycontent">
+                    <div id="helpfamily" class="subcategorycontent">
                         <h3>family</h3>
                         <p>family is where the heart is..</p>
                     </div>
 
-                    <div id="friends" class="subcategorycontent">
+                    <div id="helpfriends" class="subcategorycontent">
                         <h3>friends</h3>
                         <p>Some friends this fine day!</p>
                     </div>
 
-                    <div id="workSchool" class="subcategorycontent">
+                    <div id="helpworkSchool" class="subcategorycontent">
                         <h3>workSchool</h3>
                         <p>Get in touch, or swing by for a cup of coffee.</p>
                     </div>
 
-                    <div id="personal" class="subcategorycontent">
+                    <div id="helppersonal" class="subcategorycontent">
                         <h3>personal</h3>
                         <p>Who we are and what we do.</p>
                     </div>

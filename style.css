@@ -364,7 +364,7 @@ a {
 /* Style the tab content (and add height:100% for full page content) */
 
 .subcategorycontent {
-    color: white;
+    color: black;
     display: none;
     padding: 100px 20px;
     height: 100%;
