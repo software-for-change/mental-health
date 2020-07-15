@@ -24,3 +24,23 @@ function openPage(pageName, elmnt, color) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+
+
+// the js that controls the sub category content 
+function openSubCategory(pageName, elmnt, color) {
+    var i, subcategorycontent, subtablinks;
+    subcategorycontent = document.getElementsByClassName("subcategorycontent");
+    for (i = 0; i < subcategorycontent.length; i++) {
+        subcategorycontent[i].style.display = "none";
+    }
+    subtablinks = document.getElementsByClassName("subtablink");
+    for (i = 0; i < subtablinks.length; i++) {
+        subtablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="mainOpen" and click on it
+document.getElementById("mainOpen").click();
