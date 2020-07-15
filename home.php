@@ -146,6 +146,8 @@ include_once "access-db.php";
                         School</button>
                     <button class="subtablink" onclick="openSubCategory('helppersonal', this, 'orange')">personal</button>
 
+                    <p>select the tab that you would like to see articles</p>
+
                     <div id="helpfamily" class="subcategorycontent">
                         <h3>family</h3>
                         <p>family is where the heart is..</p>
