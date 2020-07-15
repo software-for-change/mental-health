@@ -117,9 +117,9 @@ include_once "access-db.php";
                     <p>Click on the buttons inside the tabbed menu:</p>
 
                     <div class="tab">
-                        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
-                        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                        <button class="tablinks" onclick="openSubCategory(event, 'London')" id="defaultOpen">London</button>
+                        <button class="tablinks" onclick="openSubCategory(event, 'Paris')">Paris</button>
+                        <button class="tablinks" onclick="openSubCategory(event, 'Tokyo')">Tokyo</button>
                     </div>
 
                     <div id="London" class="subtabcontent">
