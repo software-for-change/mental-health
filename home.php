@@ -63,7 +63,7 @@ include_once "access-db.php";
                     <div class="w3-quarter">
                         <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
 
-                        <p> <a href="category-validate.php">Signs of mental abuse</a> </p>
+                        <p> <a href="category-validate.php">Did you know?</a> </p>
 
 
                     </div>
@@ -71,7 +71,7 @@ include_once "access-db.php";
                     <div class="w3-quarter">
                         <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
 
-                        <p> <a href="category-help.php">How to get Help</a> </p>
+                        <p> <a href="category-help.php">How you can Help</a> </p>
 
                     </div>
 
@@ -103,45 +103,71 @@ include_once "access-db.php";
             <br><br><br>
 
             <div class="category-links">
-                <button class="tablink" onclick="openPage('Validate', this, '#D8BFD8')" id="defaultOpen">Signs of mental
-                    abuse</button>
-                <button class="tablink" onclick="openPage('Help', this, '#D8BFD8')">How to get Help</button>
+                <button class="tablink" onclick="openPage('Validate', this, '#D8BFD8')" id="defaultOpen">Did you
+                    Know?</button>
+                <button class="tablink" onclick="openPage('Help', this, '#D8BFD8')">How you can Help</button>
 
                 <div id="Validate" class="tabcontent">
+                    <button class="subtablink" onclick="openSubCategory('family', this, 'red')">family</button>
+                    <button class="subtablink" onclick="openSubCategory('friends', this, 'green')"
+                        id="mainOpen">friends</button>
+                    <button class="subtablink" onclick="openSubCategory('workSchool', this, 'blue')">Work &
+                        School</button>
+                    <button class="subtablink" onclick="openSubCategory('personal', this, 'orange')">personal</button>
+
+                    <div id="family" class="subcategorycontent">
+                        <h3>family</h3>
+                        <p>family is where the heart is..</p>
+                    </div>
+
+                    <div id="friends" class="subcategorycontent">
+                        <h3>friends</h3>
+                        <p>Some friends this fine day!</p>
+                    </div>
+
+                    <div id="workSchool" class="subcategorycontent">
+                        <h3>workSchool</h3>
+                        <p>Get in touch, or swing by for a cup of coffee.</p>
+                    </div>
+
+                    <div id="personal" class="subcategorycontent">
+                        <h3>personal</h3>
+                        <p>Who we are and what we do.</p>
+                    </div>
 
 
-                    <div class="category-cards">
+                    <!-- the content for the tabs  -->
+                    <!-- <div class="category-cards">
                         <div class="row">
 
                             <?php
-                                $sql = "SELECT category_name, valid_count FROM mental_categories";
-                                $result = $conn->query($sql);
-                                // access the resources in each category
+                                // $sql = "SELECT category_name, valid_count FROM mental_categories";
+                                // $result = $conn->query($sql);
+                                
+                                // if ($result->num_rows > 0) {
 
-                                if ($result->num_rows > 0) {
+                                //     while ($row = mysqli_fetch_array($result)) {
+                                //         echo " <div class=' paper-cols'> ";
+                                //         echo "<div class='paper'>";
 
-                                    while ($row = mysqli_fetch_array($result)) {
-                                        echo " <div class=' paper-cols'> ";
-                                        echo "<div class='paper'>";
+                                //         $category = $row["category_name"];
 
-                                        $category = $row["category_name"];
+                                //         $resources = $row["valid_count"];
 
-                                        $resources = $row["valid_count"];
-
-                                        echo "<h4><a href='category-validate.php'>" . $category . "</a></h4>";
-                                        echo "<p>" . $resources . " articles </p>";
+                                //         echo "<h4><a href='category-validate.php'>" . $category . "</a></h4>";
+                                //         echo "<p>" . $resources . " articles </p>";
                             
-                                        echo "
-                                                                                            </div>
-                                                                                            </div>
-                                                                                            ";
-                                    }
-                                }
+                                //         echo "
+                                //                                                             </div>
+                                //                                                             </div>
+                                //                                                             ";
+                                //     }
+                                // }
                                 ?>
 
                         </div>
 
-                    </div>
+                    </div> -->
 
 
 
@@ -149,39 +175,66 @@ include_once "access-db.php";
 
                 <div id="Help" class="tabcontent">
 
-                    <div class="category-cards">
+                    <button class="subtablink" onclick="openSubCategory('family', this, 'red')">family</button>
+                    <button class="subtablink" onclick="openSubCategory('friends', this, 'green')"
+                        id="mainOpen">friends</button>
+                    <button class="subtablink" onclick="openSubCategory('workSchool', this, 'blue')">Work &
+                        School</button>
+                    <button class="subtablink" onclick="openSubCategory('personal', this, 'orange')">personal</button>
+
+                    <div id="family" class="subcategorycontent">
+                        <h3>family</h3>
+                        <p>family is where the heart is..</p>
+                    </div>
+
+                    <div id="friends" class="subcategorycontent">
+                        <h3>friends</h3>
+                        <p>Some friends this fine day!</p>
+                    </div>
+
+                    <div id="workSchool" class="subcategorycontent">
+                        <h3>workSchool</h3>
+                        <p>Get in touch, or swing by for a cup of coffee.</p>
+                    </div>
+
+                    <div id="personal" class="subcategorycontent">
+                        <h3>personal</h3>
+                        <p>Who we are and what we do.</p>
+                    </div>
+
+                    <!-- <div class="category-cards">
                         <div class="row">
                             <?php
                                 // access the resources in each category
-                                $new_sql = "SELECT category_name, help_count FROM mental_categories";
-                                $new_result = $conn->query($new_sql);
+                                // $new_sql = "SELECT category_name, help_count FROM mental_categories";
+                                // $new_result = $conn->query($new_sql);
 
-                                if ($new_result->num_rows > 0) {
+                                // if ($new_result->num_rows > 0) {
 
-                                    while ($new_row = mysqli_fetch_array($new_result)) {
-                                        echo " <div class=' paper-cols'> ";
-                                        echo "<div class='paper'>";
+                                //     while ($new_row = mysqli_fetch_array($new_result)) {
+                                //         echo " <div class=' paper-cols'> ";
+                                //         echo "<div class='paper'>";
 
-                                        $category = $new_row["category_name"];
+                                //         $category = $new_row["category_name"];
 
-                                        $resources = $new_row["help_count"];
+                                //         $resources = $new_row["help_count"];
 
-                                        echo "<h4><a href='category-help.php'>" . $category . "</a></h4>";
+                                //         echo "<h4><a href='category-help.php'>" . $category . "</a></h4>";
                                         
-                                        echo "<p>" . $resources . " articles </p>";
+                                //         echo "<p>" . $resources . " articles </p>";
                                         
-                                        echo "
-                                                                                            </div>
-                                                                                            </div>
-                                                                                            ";
-                                    }
-                                }
+                                //         echo "
+                                //                                                             </div>
+                                //                                                             </div>
+                                //                                                             ";
+                                //     }
+                                // }
 
                                 ?>
 
                         </div>
 
-                    </div>
+                    </div> -->
 
 
                 </div>
@@ -204,7 +257,7 @@ include_once "access-db.php";
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <script>
-    
+
     </script>
 
 </body>

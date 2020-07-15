@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+        /* Set height of body and the document to 100% */
+        
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial;
+        }
+        /* Style tab links */
+        
+        .subtablink {
+            background-color: #555;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 17px;
+            width: 25%;
+        }
+        
+        .subtablink:hover {
+            background-color: #777;
+        }
+        /* Style the tab content (and add height:100% for full page content) */
+        
+        .subcategorycontent {
+            color: white;
+            display: none;
+            padding: 100px 20px;
+            height: 100%;
+        }
+        
+        #family {
+            background-color: red;
+        }
+        
+        #friends {
+            background-color: green;
+        }
+        
+        #workSchool {
+            background-color: blue;
+        }
+        
+        #personal {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="subtablink" onclick="openSubCategory('family', this, 'red')">family</button>
+    <button class="subtablink" onclick="openSubCategory('friends', this, 'green')" id="mainOpen">friends</button>
+    <button class="subtablink" onclick="openSubCategory('workSchool', this, 'blue')">Work & School</button>
+    <button class="subtablink" onclick="openSubCategory('personal', this, 'orange')">personal</button>
+
+    <div id="family" class="subcategorycontent">
+        <h3>family</h3>
+        <p>family is where the heart is..</p>
+    </div>
+
+    <div id="friends" class="subcategorycontent">
+        <h3>friends</h3>
+        <p>Some friends this fine day!</p>
+    </div>
+
+    <div id="workSchool" class="subcategorycontent">
+        <h3>workSchool</h3>
+        <p>Get in touch, or swing by for a cup of coffee.</p>
+    </div>
+
+    <div id="personal" class="subcategorycontent">
+        <h3>personal</h3>
+        <p>Who we are and what we do.</p>
+    </div>
+
+    <script>
+        function openSubCategory(pageName, elmnt, color) {
+            var i, subcategorycontent, subtablinks;
+            subcategorycontent = document.getElementsByClassName("subcategorycontent");
+            for (i = 0; i < subcategorycontent.length; i++) {
+                subcategorycontent[i].style.display = "none";
+            }
+            subtablinks = document.getElementsByClassName("subtablink");
+            for (i = 0; i < subtablinks.length; i++) {
+                subtablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="mainOpen" and click on it
+        document.getElementById("mainOpen").click();
+    </script>
+
+</body>
+
+</html>

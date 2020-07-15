@@ -342,6 +342,51 @@ a {
 }
 
 
+/* the second tab links for the sub categories */
+
+.subtablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.subtablink:hover {
+    background-color: #777;
+}
+
+
+/* Style the tab content (and add height:100% for full page content) */
+
+.subcategorycontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#family {
+    background-color: red;
+}
+
+#friends {
+    background-color: green;
+}
+
+#workSchool {
+    background-color: blue;
+}
+
+#personal {
+    background-color: orange;
+}
+
+
 /* ***************LANDING PAGE /index*************************** */
 
 .bgimg {
