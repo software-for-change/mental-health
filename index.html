@@ -15,84 +15,14 @@
             <h1 class="index-logo">Journey to Mental Wealth</h1>
         </div>
 
-
-        <div class="row">
-
-            <div class="w3-half mental-qtns">
-                <h3 class="text-center">What they say mental health is about...</h3> <br>
-                <div class="thought">are Violent and un-predictable</div>
-                <div class="thought">Can't hold down a job</div>
-                <div class="thought">Have character flaws</div>
-                <div class="thought">have no hope to get better.</div>
-                <div class="thought no-mobile">are Violent and un-predictable</div>
-                <div class="thought no-mobile">Can't hold down a job</div>
-                <div class="thought no-mobile">Have character flaws</div>
-                <div class="thought no-mobile">have no hope to get better.</div>
-                <div class="thought no-mobile">are Violent and un-predictable</div>
-                <div class="thought no-mobile">Can't hold down a job</div>
-                <div class="thought no-mobile">Have character flaws</div>
-                <div class="thought no-mobile">have no hope to get better.</div>
-                <div class="thought no-mobile">have no hope to get better.</div>
-                <div class="thought no-mobile">are Violent and un-predictable</div>
-
-            </div>
-
-            <div class="w3-half chat-box">
-                <div class='wrapper'>
-                    <p>How we feel sometimes...</p>
-                    <div class='speechbubble'>
-                        <p>
-                            Sometimes I feel alone and my problems don't matter. It's easy for people to say they care but why do I always feel like my problems will never end and there is no light at the end of this tunnel.
-                            <span class='username'>Feuern_D</span>
-                        </p>
-                    </div>
-                    <div class='speechbubble'>
-                        <p>
-                            Kaze, what is the best conversation style that highlights depression or someone being lonely... we need to come up with that kind of convo. that screams... i'm not okay...
-                            <span class='username'>Feuern_D</span>
-                        </p>
-                    </div>
-                    <div class='speechbubble no-mobile'>
-                        <p>
-                            So I created this thread to see if anyone wants to work on creating an N Wheeled class vehicle with me, as opposed to a bunch of people banging their heads against the wall seperately.
-                            <span class='username'>Feuern_D</span>
-                        </p>
-                    </div>
+        <h1 class="index-heading"><span class="index-text">ABCDEFGHIKJ
+            <hr>
+        </span></h1>
 
 
-                </div>
-                <div class="w3-center w3-theme-white">
-                    <h1>What if I told you how you feel is part of mental health?</h1>
+        <!-- <div class="w3-display-middle">
 
-                    <p>
-                        Journey to mental wealth by Nekesa Mercy, collecting interesting, informative and insightful content from around the internet. Sign up to receive a monthly summary of new articles collected.
-
-                    </p>
-
-                    <form action="">
-                        <input type="text" placeholder="Enter your email">
-                        <input type="submit" value="Never miss a resource">
-                    </form>
-
-                    <a href="home.php">Learn more</a>
-
-                    <div class="sharethis-sticky-share-buttons"></div>
-                    <div class="sharethis-inline-follow-buttons"></div>
-
-                    <!-- MUST WORK ON THIS BELOW!!!!!! DON'T FORGET -->
-                    <!-- add the subscribe on the links page -->
-
-
-
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-
+        </div> -->
 
 
         <!-- citation: https://www.mentalhealth.gov/basics/mental-health-myths-facts -->
@@ -100,6 +30,13 @@
     </div>
 
     <script>
+        $(document).ready(function() {
+            var position = $("h1").position();
+            var padding = 10;
+            var left = position.left + padding;
+            var top = position.top + padding;
+            $("h1").find("span").css("background-position", "-" + left + "px -" + top + "px");
+        });
     </script>
 
 </body>
