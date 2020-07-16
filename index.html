@@ -11,32 +11,57 @@
 
 <body class="index-body">
     <div class="bgimg">
-        <div class="w3-display-topleft">
-            <h1 class="index-logo">Journey to Mental Wealth</h1>
+        <div class="text-wrap">
+            <svg viewBox="0 0 500 80">
+              <pattern 
+                       id="p-img" 
+                       viewBox="0 0 300 100"
+                       patternUnits="userSpaceOnUse"
+                       width="200%" height="200%"
+                       x="-60%" y="-10%">
+                <image xlink:href="images/circles.jpg" width="300" height="200"/>
+              </pattern>
+              <text text-anchor="middle"
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    class="img-layer">
+                Journey to mental wealth
+              </text>
+              <linearGradient id="gr-overlay" x1="0" y1="0" x2="100%" y2="100%">
+                <stop stop-color="hsla(50, 100%, 70%, 0.5)" offset="10%"/>
+                <stop stop-color="hsla(200, 100%, 60%, 0.5)" offset="50%"/>
+                <stop stop-color="hsla(320, 100%, 50%, 0.5)" offset="90%"/>
+              </linearGradient>
+              <text text-anchor="middle"
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    class="gradient-layer">
+                Journey to mental wealth
+              </text>
+            </svg>
+
         </div>
+        <div class="w3-display-middle">
+            <h1 class="index-heading">To the people crying unseen tears. I see you.</h1><br>
+            <p class="index-text">
+                Abuse that is seldom talked about, acknowledged or addressed is still abuse. The scars it leaves in our hearts is real. But it doesn't have to be this way. Journey to mental wealth by Nekesa Mercy, collecting interesting, informative and insightful content
+                from around the internet. Sign up to receive a monthly summary of new articles collected.
 
-        <h1 class="index-heading"><span class="index-text">ABCDEFGHIKJ
-            <hr>
-        </span></h1>
+            </p>
+            <br>
+            <form action="">
+                <input class="email-input" type="text" placeholder="Enter your email">
+                <input class="email-submit" type="submit" value="Never miss an article">
+            </form>
 
 
-        <!-- <div class="w3-display-middle">
-
-        </div> -->
-
-
-        <!-- citation: https://www.mentalhealth.gov/basics/mental-health-myths-facts -->
+        </div>
 
     </div>
 
     <script>
-        $(document).ready(function() {
-            var position = $("h1").position();
-            var padding = 10;
-            var left = position.left + padding;
-            var top = position.top + padding;
-            $("h1").find("span").css("background-position", "-" + left + "px -" + top + "px");
-        });
     </script>
 
 </body>
