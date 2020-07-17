@@ -439,7 +439,7 @@ a {
 }
 
 .text-wrap svg .gradient-layer {
-    fill: url(#gr-overlay);
+    fill: url(#g-overlay);
     font-size: medium;
 }
 
