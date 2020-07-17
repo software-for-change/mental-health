@@ -53,7 +53,7 @@ include_once "access-db.php";
         <!-- circle nav icons -->
         <div id="feature-icons" class="browse-icons w3-padding-32">
             <h3>Choose where to go</h3>
-            <p class="nav-description"> Click <strong> Did you know</strong> and <strong> How to Help </strong>  Navigate to the collection of articles. Use <strong> Suggest an article </strong> to recommend an article that we do not have but you feel would enrich our collection. 
+            <p class="nav-description"> Click <strong> Did you know</strong> and <strong> How can you Help </strong> to navigate to the collection of articles. Use <strong> Suggest an article </strong> to recommend an article that we do not have but you feel would enrich our collection. 
                 </p>
 
             <div class="desktop-browse-icons w3-padding-64 w3-center w3-theme-l5">
@@ -99,7 +99,7 @@ include_once "access-db.php";
             <div class="category-links">
                 <button class="tablink" onclick="openPage('Validate', this, '#D8BFD8')" id="defaultOpen">Did you
                     Know?</button>
-                <button class="tablink" onclick="openPage('Help', this, '#D8BFD8')" id="howtoHelp">How you can Help</button>
+                <button class="tablink" onclick="openPage('Help', this, '#D8BFD8')" id="howtoHelp">How can you Help?</button>
 
                 <div id="Validate" class="tabcontent">
                     

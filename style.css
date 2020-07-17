@@ -182,6 +182,11 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
 .arrow {
     text-align: center;
     margin: 8% 0;
@@ -815,7 +820,7 @@ input[class=email-submit] {
         padding: 21px 0px;
     }
     .categories {
-        height: 145vh;
+        height: 160vh;
     }
     /********** the index / landing page styling **************/
     .index-heading {
