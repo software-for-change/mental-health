@@ -49,7 +49,7 @@ include_once "access-db.php";
 
                     <div class="sharethis-inline-follow-buttons"></div>
 
-                    <form class="email-form w3-display-right" action="">
+                    <form class="email-form" action="">
                         <input class="email-input" type="text" placeholder="Enter your email">
                         <input class="email-submit" type="submit" value="Never miss an article">
                     </form>
@@ -118,15 +118,11 @@ include_once "access-db.php";
     </div>
 
 
-
-
-
-
     <!-- footer design -->
     <hr class="cat-divider">
     <?php include 'footer.php';?>
 
-    </div>
+    
 
 
 
