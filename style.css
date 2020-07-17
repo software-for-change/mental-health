@@ -1,6 +1,6 @@
 :root {
     /* --shadeofwhite: #f8f8f7; */
-    --shadeofwhite: #ececec;
+    --shadeofblack: #333132;
     --grape: #94618E;
     --lightgray: #d3d3d3;
     --lightpurple: #D8BFD8;
@@ -502,6 +502,8 @@ input[class=email-submit] {
 
 .category-header-sec {
     padding-bottom: 100px;
+    background-color: #333132;
+    color: white;
 }
 
 .category-heading {
@@ -511,7 +513,33 @@ input[class=email-submit] {
 
 .category-heading h1 {
     font-family: 'Roboto', sans-serif;
-    letter-spacing: -3px;
+    letter-spacing: -1px;
+    font-size: 28px;
+}
+
+.category-recommend {
+    display: inherit;
+    margin-top: 30%;
+    text-align: center;
+    color: orange;
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+.follow-buttons {
+    padding-bottom: 26%;
+}
+
+.category-subscribe {
+    text-align: center;
+}
+
+.category-submit-btn {
+    background-color: var(--grape);
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-decoration: none;
 }
 
 

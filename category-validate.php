@@ -33,7 +33,7 @@ include_once "access-db.php";
             <div class="w3-row w3-padding-64">
 
                 <div class="w3-third">
-                    <a href="recommend.php">Suggest an article or Category</a>
+                    <a class="category-recommend" href="recommend.php">Suggest an article or Category?</a>
                 </div>
 
                 <div class="w3-third">
@@ -47,9 +47,9 @@ include_once "access-db.php";
 
                     <div class="sharethis-sticky-share-buttons"></div>
 
-                    <div class="sharethis-inline-follow-buttons"></div>
+                    <div class="sharethis-inline-follow-buttons follow-buttons"></div>
 
-                    <form class="email-form" action="">
+                    <form class="email-form category-subscribe" action="">
                         <input class="email-input" type="text" placeholder="Enter your email">
                         <input class="email-submit" type="submit" value="Never miss an article">
                     </form>

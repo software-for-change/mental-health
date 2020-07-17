@@ -6,11 +6,11 @@ echo "
     <ul class='topnav'>
                 <li><a class='logo' href='home.php'>Journey to Mental Wealth</a></li>
 
-                <li class='right'><a href='category-help.php'>Home</a></li>
-                <li class='right'><a href='category-validate.php'>Signs</a></li>
-                <li class='right'><a href='category-help.php'>Help</a></li>
+               
                 <li class='right'><a href='recommend.php'>Suggest an article</a></li>
                 <li class='right'><a href='about.php'>About</a></li>
+                <li class='right'><a href='category-validate.php'>Categories</a></li>
+                <li class='right'><a href='category-help.php'>Home</a></li>
             </ul>
 
             <!-- mobile navigation -->
