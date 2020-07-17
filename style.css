@@ -96,7 +96,7 @@ ul.topnav li.right {
     width: 0;
     position: fixed;
     z-index: 1;
-    height: 250px;
+    height: 270px;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.9);
@@ -797,14 +797,25 @@ input[class=email-submit] {
         margin-top: 0px;
     }
     .paper-cols {
-        width: 50%;
+        width: 95%;
         margin-bottom: 0px;
+    }
+    .paper h4 {
+        padding-bottom: 0px;
+        font-size: small;
     }
     .paper {
         width: 100%;
     }
     .sidepanel {
         display: block;
+    }
+    .tab button {
+        font-size: 12px;
+        padding: 21px 0px;
+    }
+    .categories {
+        height: 145vh;
     }
     /********** the index / landing page styling **************/
     .index-heading {
@@ -870,6 +881,9 @@ input[class=email-submit] {
     .index-heading {
         margin-top: 70%;
     }
+    .categories {
+        height: 178vh;
+    }
 }
 
 
@@ -916,6 +930,16 @@ input[class=email-submit] {
     }
     .nav-description {
         font-size: large;
+    }
+    .paper-cols {
+        width: 50%;
+    }
+    .paper h4 {
+        padding-bottom: 10px;
+        font-size: x-large;
+    }
+    .tab button {
+        font-size: 20px;
     }
     /* ************inex page ****************/
     .index-heading {
@@ -983,6 +1007,16 @@ input[class=email-submit] {
     }
     .nav-description {
         font-size: x-large;
+    }
+    .paper-cols {
+        width: 50%;
+    }
+    .paper h4 {
+        padding-bottom: 20px;
+        font-size: xx-large;
+    }
+    .tab button {
+        font-size: 30px;
     }
     /* ***********Recommend page and about******************** */
     .contact-input label,

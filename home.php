@@ -53,7 +53,7 @@ include_once "access-db.php";
         <!-- circle nav icons -->
         <div id="feature-icons" class="browse-icons w3-padding-32">
             <h3>Choose where to go</h3>
-            <p class="nav-description">Find our articles by clicking Did you know and How to Help. Use suggest an article to recommend an article that we do not have but feel would enrich our collection. 
+            <p class="nav-description"> Click <strong> Did you know</strong> and <strong> How to Help </strong>  Navigate to the collection of articles. Use <strong> Suggest an article </strong> to recommend an article that we do not have but you feel would enrich our collection. 
                 </p>
 
             <div class="desktop-browse-icons w3-padding-64 w3-center w3-theme-l5">
@@ -91,7 +91,7 @@ include_once "access-db.php";
 
         <div class="categories">
             <h3>Browse Categories</h3>
-            <p class="nav-description">Did you know is a collection of artilces about abuse often not talked about. How you can help is a collection of articles shedding light on ways we can help each other when dealing with mental abuse.
+            <p class="nav-description"> <strong> Did you know </strong> tab has a collection of articles about abuse different forms of abuse that people experience. <strong> How you can help </strong> tab has a collection of articles shedding light on ways we can help each other when dealing with mental abuse.
                 </p>
 
             <br><br><br>
@@ -103,7 +103,7 @@ include_once "access-db.php";
 
                 <div id="Validate" class="tabcontent">
                     
-                    <p>Click on the buttons inside the tabbed menu:</p>
+                    <p>Click on the text in the article to be routed to the articles of a chosen group:</p>
 
                     <div class="tab">
                         <button class="tablinks" onclick="openSubCategory(event, 'Family')"

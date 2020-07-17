@@ -19,7 +19,7 @@ echo "
                 <a href='category-validate.php'>Signs</a>
                 <a href='category-help.php'>Help</a>
                 <a href='about.php'>About</a>
-                <a href='recommend.php'>Recommend a Resource</a>
+                <a href='recommend.php'>Suggest a link</a>
             </div>
 
             <button class='openbtn mobile-nav' onclick='openNav()'>☰ Menu </button>
