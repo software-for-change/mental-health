@@ -447,6 +447,7 @@ a {
 /* text on the landing page */
 
 .index-heading {
+    margin-top: 20%;
     font-size: 70px;
     letter-spacing: -3px;
     line-height: 80px;
@@ -466,6 +467,7 @@ a {
     border-bottom: 0.1px solid gray;
     padding: 3px 10px;
     outline: none;
+    color: white;
     background: transparent;
 }
 
@@ -477,6 +479,12 @@ input[class=email-submit] {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+.browse-articles {
+    display: inherit;
+    text-decoration: underline;
+    color: silver;
 }
 
 
@@ -799,7 +807,7 @@ input[class=email-submit] {
     }
     /********** the index / landing page styling **************/
     .index-heading {
-        margin-top: 35px;
+        margin-top: 41%;
         font-size: 27px;
         letter-spacing: -2px;
         text-align: center;
@@ -851,6 +859,15 @@ input[class=email-submit] {
     }
     .category-header-sec {
         padding-bottom: 50px;
+    }
+}
+
+
+/* styling the iphone 5 screen for the index page */
+
+@media only screen and (max-width: 320px) {
+    .index-heading {
+        margin-top: 70%;
     }
 }
 
