@@ -51,7 +51,7 @@ include_once "access-db.php";
 
                     <form class="email-form category-subscribe" action="">
                         <input class="email-input" type="text" placeholder="Enter your email">
-                        <input class="email-submit" type="submit" value="Never miss an article">
+                        <input class="email-submit category-submit-btn" type="submit" value="Never miss an article">
                     </form>
                 </div>
 
