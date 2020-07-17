@@ -38,7 +38,7 @@ include_once "access-db.php";
             <div class="heading">
                 <h1 class="top-word">.Live With Care.</h1>
 
-                <h1 class="bottom-word">a collection of resources about mental health</h1>
+                <h1 class="bottom-word">a collection of articles shedding a light on the unspoken</h1>
             </div>
 
 
@@ -51,38 +51,32 @@ include_once "access-db.php";
 
 
         <!-- circle nav icons -->
-        <div id="feature-icons" class="browse-icons">
-            <h3>Browse Options</h3>
-            <p class="nav-description">Choose one of the features to navigate to their respective pages. The 2 center
-                buttons will change the content for the categories displayed.</p>
+        <div id="feature-icons" class="browse-icons w3-padding-32">
+            <h3>Choose where to go</h3>
+            <p class="nav-description">Find our articles by clicking Did you know and How to Help. Use suggest an article to recommend an article that we do not have but feel would enrich our collection. 
+                </p>
 
             <div class="desktop-browse-icons w3-padding-64 w3-center w3-theme-l5">
                 <div class="w3-row"><br>
 
-
-                    <div class="w3-quarter">
+                    <div class="w3-third">
                         <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
 
-                        <p> <a href="category-validate.php">Did you know?</a> </p>
+                        <p> <a href="#defaultOpen">Did you know?</a> </p>
 
 
                     </div>
 
-                    <div class="w3-quarter">
+                    <div class="w3-third">
                         <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
 
-                        <p> <a href="category-help.php">How you can Help</a> </p>
+                        <p> <a href="#howtoHelp">How can you Help?</a> </p>
 
                     </div>
 
-                    <div class="w3-quarter">
+                    <div class="w3-third">
                         <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
-                        <p><a href="recommend.php">Recommend a Resource </a></p>
-                    </div>
-
-                    <div class="w3-quarter">
-                        <div class="w3-center w3-circle w3-hover-opacity icon-circle"></div>
-                        <p><a href="volunteer.php">Volunteer </a></p>
+                        <p><a href="recommend.php">Suggest a category / article</a></p>
                     </div>
 
                 </div>
@@ -96,16 +90,16 @@ include_once "access-db.php";
         <hr class="cat-divider">
 
         <div class="categories">
-            <h3>Content Category</h3>
-            <p class="nav-description">Each category has articles organised based on different groups. Select a category
-                and click the title of the group to be routed to the respective page</p>
+            <h3>Browse Categories</h3>
+            <p class="nav-description">Did you know is a collection of artilces about abuse often not talked about. How you can help is a collection of articles shedding light on ways we can help each other when dealing with mental abuse.
+                </p>
 
             <br><br><br>
 
             <div class="category-links">
                 <button class="tablink" onclick="openPage('Validate', this, '#D8BFD8')" id="defaultOpen">Did you
                     Know?</button>
-                <button class="tablink" onclick="openPage('Help', this, '#D8BFD8')">How you can Help</button>
+                <button class="tablink" onclick="openPage('Help', this, '#D8BFD8')" id="howtoHelp">How you can Help</button>
 
                 <div id="Validate" class="tabcontent">
                     
