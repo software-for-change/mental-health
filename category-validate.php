@@ -49,7 +49,7 @@ include_once "access-db.php";
 
                     <div class="sharethis-inline-follow-buttons"></div>
 
-                    <form class="email-form" action="">
+                    <form class="email-form w3-display-right" action="">
                         <input class="email-input" type="text" placeholder="Enter your email">
                         <input class="email-submit" type="submit" value="Never miss an article">
                     </form>
@@ -66,17 +66,7 @@ include_once "access-db.php";
             and are meant to give you ideas on how to deal but don't subsitute therapy.</p>
 
         <div class="category-links">
-            <button class="tablink" onclick="openPage('Home', this, '#D8BFD8')">Home</button>
-            <button class="tablink" onclick="openPage('Relationships', this, '#D8BFD8')"
-                id="defaultOpen">Relationships</button>
-            <button class="tablink" onclick="openPage('Religious', this, '#D8BFD8')">Religious</button>
-            <button class="tablink" onclick="openPage('Family', this, '#D8BFD8')">Family</button>
-
-            <div id="Home" class="tabcontent">
-                <h3>Home</h3>
-                <p>Home is where the heart is..</p>
-            </div>
-
+            
             <div id="Relationships" class="tabcontent">
                 <h3>Relationships</h3>
 
@@ -119,91 +109,9 @@ include_once "access-db.php";
                 </div>
             </div>
 
-            <div id="Religious" class="tabcontent">
-                <h3>Religious</h3>
-                <div class="vl"></div>
+           
 
-                <div class="w3-row scrollable ">
-
-                    <?php 
-                    $new_sql = "SELECT * FROM mental_validate WHERE category_id=2";
-                    $new_result = $conn->query($new_sql);
-
-                    if ($new_result->num_rows > 0) {
-                       
-                        while ($new_row = mysqli_fetch_array($new_result)) {
-                            
-                            echo "<div class='article-container'>";
-        
-                            
-                            $article = $new_row["article_title"];
-                            $url = $new_row["article_url"]; 
-                           
-                            echo "<ul>
-                                    <li><a class='tiptext' href='.$url.'>".$article."
-                                        <iframe class='description' width='560' height='315' src='.$url.' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
-                                    </a></li>
-                                </ul>
-                                <hr>";
-
-                        }
-                    } else {
-                        $_SESSION["message"] =  "No results were found in the family category.";
-                    }
-
-                    echo "
-                                                        
-                                                        </div>
-                                                        ";
-
-                ?>
-
-                </div>
-            </div>
-
-            <div id="Family" class="tabcontent">
-                <h3>Family</h3>
-
-                <div class="vl"></div>
-
-                <div class="w3-row scrollable ">
-
-                    <?php 
-                    $new_sql = "SELECT * FROM mental_validate WHERE category_id=1";
-                    $new_result = $conn->query($new_sql);
-
-                    if ($new_result->num_rows > 0) {
-                       
-                        while ($new_row = mysqli_fetch_array($new_result)) {
-                            echo " <div class='w3-half'> ";
-                            echo "<div class='article-container'>";
-        
-                            
-                            $article = $new_row["article_title"];
-                            $url = $new_row["article_url"]; 
-                           
-                            echo "<ul>
-                                    <li><a class='tiptext' href='.$url.'>".$article."
-                                        <iframe class='description' width='560' height='315' src='.$url.' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
-                                    </a></li>
-                                </ul>
-                                <hr>";
-
-                        }
-                    } else {
-                        $_SESSION["message"] =  "No results were found in the family category.";
-                    }
-
-                    echo "
-                                                        </div>
-                                                        </div>
-                                                        ";
-
-                ?>
-
-                </div>
-            </div>
-
+           
 
 
         </div>
