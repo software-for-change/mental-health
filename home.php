@@ -103,7 +103,7 @@ include_once "access-db.php";
 
                 <div id="Validate" class="tabcontent">
                     
-                    <p>Click on the text in the article to be routed to the articles of a chosen group:</p>
+                    <p class="nav-description">Click on the text in the article to be routed to the articles of a chosen group:</p>
 
                     <div class="tab">
                         <button class="tablinks" onclick="openSubCategory(event, 'Family')"
@@ -168,7 +168,7 @@ include_once "access-db.php";
                 </div>
 
                 <div id="Help" class="tabcontent">
-                    <p>Click on the buttons inside the tabbed menu:</p>
+                    <p class="nav-description">Click on the text in the article to be routed to the articles of a chosen group:</p>
 
                     <div class="tab">
                         <button class="tablinks" onclick="openSubCategory(event, 'helpfamily')"
