@@ -16,6 +16,9 @@ include_once "access-db.php";
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap"
         rel="stylesheet">
+    <script type="text/javascript"
+        src="https://platform-api.sharethis.com/js/sharethis.js#property=5f0db3dbb745880012eaaa1d&product=inline-share-buttons"
+        async="async"></script>
 </head>
 
 <body>
@@ -30,9 +33,7 @@ include_once "access-db.php";
             <div class="w3-row w3-padding-64">
 
                 <div class="w3-third">
-                    <div class="category-fly">
-                        <img src="images/nature-leaves.png" alt="">
-                    </div>
+                    <a href="recommend.php">Suggest an article or Category</a>
                 </div>
 
                 <div class="w3-third">
@@ -44,9 +45,14 @@ include_once "access-db.php";
 
                 <div class="w3-third">
 
-                    <div class="wilderness-fly">
-                        <img src="images/nature-leaves.png" alt="">
-                    </div>
+                    <div class="sharethis-sticky-share-buttons"></div>
+
+                    <div class="sharethis-inline-follow-buttons"></div>
+
+                    <form class="email-form" action="">
+                        <input class="email-input" type="text" placeholder="Enter your email">
+                        <input class="email-submit" type="submit" value="Never miss an article">
+                    </form>
                 </div>
 
             </div>
@@ -73,7 +79,7 @@ include_once "access-db.php";
 
             <div id="Relationships" class="tabcontent">
                 <h3>Relationships</h3>
-                
+
 
                 <div class="w3-row scrollable ">
 
