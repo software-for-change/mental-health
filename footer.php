@@ -12,6 +12,7 @@ echo "    <footer>
 
     <div class='w3-third w3-center'>
         <p class='w3-center'> Copy right 2020</p>
+        <div class='sharethis-inline-follow-buttons follow-buttons'></div>
     </div>
 
     <div class='w3-third w3-center'>

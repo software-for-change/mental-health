@@ -34,7 +34,7 @@ include_once "access-db.php";
 
                 <div class="w3-half">
                     <div class="w3-center category-heading">
-                        <h1>validating our feelings through reading people's expreiences changes the way we see our
+                        <h1>Validating our feelings through reading people's expreiences changes the way we see our
                             selves. we become more human.</h1>
                     </div>
                 </div>
@@ -42,8 +42,6 @@ include_once "access-db.php";
                 <div class="w3-half">
 
                     <div class="sharethis-sticky-share-buttons"></div>
-
-                    <div class="sharethis-inline-follow-buttons follow-buttons"></div>
 
                     <form class="email-form category-subscribe" action="">
                         <input class="email-input" type="text" placeholder="Enter your email"> 
