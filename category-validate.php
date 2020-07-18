@@ -19,6 +19,7 @@ include_once "access-db.php";
     <script type="text/javascript"
         src="https://platform-api.sharethis.com/js/sharethis.js#property=5f0db3dbb745880012eaaa1d&product=inline-share-buttons"
         async="async"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 
 <body>
@@ -44,10 +45,10 @@ include_once "access-db.php";
                     <div class="sharethis-sticky-share-buttons"></div>
 
                     <form class="email-form category-subscribe" action="">
-                        <input class="email-input" type="text" placeholder="Enter your email"> 
+                        <input class="email-input" type="text" placeholder="Enter your email">
                         <input class="email-submit category-submit-btn" type="submit" value="Never miss an article">
                     </form>
-                    <a> <i style='font-size:20px' class='fas'>&#xf060;</i> Browse Categories</a>
+                    <a class="w3-center"> <i style='font-size:20px' class='fas'>&#xf060;</i> Browse Categories</a>
                 </div>
 
             </div>
