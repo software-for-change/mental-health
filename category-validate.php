@@ -30,29 +30,32 @@ include_once "access-db.php";
             <!-- nav bar -->
             <?php include 'header.php';?>
 
-            <div class="w3-row w3-padding-64">
+            <div class="w3-row w3-padding-32">
 
-                <div class="w3-third">
-                    <a class="category-recommend" href="recommend.php">Suggest an article or Category?</a>
-                </div>
-
-                <div class="w3-third">
+                <div class="w3-half">
                     <div class="w3-center category-heading">
                         <h1>validating our feelings through reading people's expreiences changes the way we see our
                             selves. we become more human.</h1>
                     </div>
                 </div>
 
-                <div class="w3-third">
+                <div class="w3-half">
 
                     <div class="sharethis-sticky-share-buttons"></div>
 
                     <div class="sharethis-inline-follow-buttons follow-buttons"></div>
 
                     <form class="email-form category-subscribe" action="">
-                        <input class="email-input" type="text" placeholder="Enter your email">
+                        <input class="email-input" type="text" placeholder="Enter your email"> 
                         <input class="email-submit category-submit-btn" type="submit" value="Never miss an article">
                     </form>
+                    <a href="">Browse categories</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back" width="44"
+                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9E9E9E" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <path d="M9 11l-4 4l4 4m-4 -4h11a4 4 0 0 0 0 -8h-1" />
+                    </svg>
                 </div>
 
             </div>
@@ -61,12 +64,12 @@ include_once "access-db.php";
 
         <!-- end of header -->
 
-        <h3 class="w3-center">Cateogry: Signs of mental abuse</h3>
+        <h3 class="w3-center sub-category">Cateogry: Signs of mental abuse</h3>
         <p class="category-desc w3-center w3-padding-16">These articles describe different ways in which people can cope
             and are meant to give you ideas on how to deal but don't subsitute therapy.</p>
 
         <div class="category-links">
-            
+
             <div id="Relationships" class="tabcontent">
                 <h3>Relationships</h3>
 
@@ -109,9 +112,9 @@ include_once "access-db.php";
                 </div>
             </div>
 
-           
 
-           
+
+
 
 
         </div>
@@ -122,7 +125,7 @@ include_once "access-db.php";
     <hr class="cat-divider">
     <?php include 'footer.php';?>
 
-    
+
 
 
 
