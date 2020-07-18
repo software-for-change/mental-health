@@ -496,10 +496,6 @@ input[class=email-submit] {
 
 /* ***************************CATEGORY PAGE *************************** */
 
-.category-content {
-    max-width: 1600px;
-}
-
 .category-header-sec {
     padding-bottom: 100px;
     color: black;
@@ -546,6 +542,10 @@ input[class=email-submit] {
     color: white;
     padding: 10px 6px;
     text-decoration: none;
+}
+
+.category-subscribe .email-input {
+    width: 50%;
 }
 
 
