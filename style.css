@@ -859,58 +859,44 @@ input[class=email-submit] {
         padding-bottom: 20px;
         margin-top: 0;
     }
-}
-
-
-/* ********** about page and recommend page ***************** */
-
-.about-card,
-.recommend-card {
-    display: block;
-    padding-top: 5%;
-    width: 100%;
-    margin: 0;
-    margin-top: 30%;
-    font-size: small;
-}
-
-
-/* re-size the heading for the recommned page */
-
-.form h1 {
-    letter-spacing: 0px;
-    font-size: medium;
-}
-
-
-/***************category-help page********************  */
-
-.wilderness-fly img {
-    display: none;
-}
-
-.category-fly {
-    text-align: center;
-    margin-left: 0px;
-    margin-top: 5%;
-}
-
-.category-fly img {
-    height: 100px;
-    width: 100px;
-}
-
-.category-heading {
-    margin-top: 10%;
-}
-
-.category-header-sec {
-    padding-bottom: 50px;
-}
-
-.category-heading h1 {
-    letter-spacing: 0px;
-    font-size: medium;
+    .category-heading h1 {
+        letter-spacing: 0px;
+        font-size: medium;
+    }
+    /* ********** about page and recommend page ***************** */
+    .about-card,
+    .recommend-card {
+        display: block;
+        padding-top: 5%;
+        width: 100%;
+        margin: 0;
+        margin-top: 30%;
+        font-size: small;
+    }
+    /* re-size the heading for the recommned page */
+    .form h1 {
+        letter-spacing: 0px;
+        font-size: medium;
+    }
+    /***************category-help page********************  */
+    .wilderness-fly img {
+        display: none;
+    }
+    .category-fly {
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 5%;
+    }
+    .category-fly img {
+        height: 100px;
+        width: 100px;
+    }
+    .category-heading {
+        margin-top: 10%;
+    }
+    .category-header-sec {
+        padding-bottom: 50px;
+    }
 }
 
 
