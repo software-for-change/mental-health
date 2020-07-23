@@ -453,10 +453,15 @@ a:hover {
 /* text on the landing page */
 
 .index-heading {
+    font-family: 'Over the Rainbow', cursive;
     margin-top: 20%;
-    font-size: 48px;
+    font-size: 88px;
     letter-spacing: -3px;
     line-height: 80px;
+}
+
+.small {
+    font-size: 10px;
 }
 
 .index-text {
